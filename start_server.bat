@@ -1,0 +1,9 @@
+@echo off
+echo 设置工作目录到脚本所在位置...
+cd /d %~dp0
+echo 当前工作目录: %cd%
+echo 启动Python HTTP服务器在端口9000...
+pause
+echo 服务器将在浏览器中打开...
+start http://localhost:9000
+python -m http.server 9000
