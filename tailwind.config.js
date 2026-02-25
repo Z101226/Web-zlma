@@ -2,19 +2,31 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./about.html",
+    "./services.html",
+    "./products.html",
+    "./team.html",
+    "./contact.html",
+    "./src/**/*.{html,js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#3b82f6',
-        secondary: '#1e40af',
-        accent: '#f97316',
-        dark: '#1e293b',
-        light: '#f8fafc',
+        primary: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
+        },
       },
       fontFamily: {
-        inter: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },
   },

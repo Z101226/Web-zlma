@@ -1,190 +1,471 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我们 - 公司名称</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #2c3e50;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 16px;
-        }
-        nav a:hover {
-            color: #3498db;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .page-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .page-header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin: 40px 0;
-        }
-        .contact-info h2, .contact-form h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-        .contact-item {
-            margin-bottom: 25px;
-        }
-        .contact-item h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #3498db;
-        }
-        .contact-item p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            font-family: inherit;
-        }
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #3498db;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #3498db;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #2980b9;
-        }
-        footer {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 - 京徽龙江-致欣科技</title>
+  <meta name="description" content="联系京徽龙江-致欣科技，获取专业的技术解决方案和咨询服务。">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
-<body>
-    <header>
-        <h1>公司名称</h1>
-    </header>
-    
-    <nav>
-        <a href="index.html">首页</a>
-        <a href="about.html">关于我们</a>
-        <a href="services.html">服务项目</a>
-        <a href="contact.html">联系我们</a>
-    </nav>
-    
-    <div class="container">
-        <section class="page-header">
-            <h1>联系我们</h1>
-            <p>我们期待与您的合作</p>
-        </section>
+<body class="font-sans text-gray-800">
+  <!-- 顶部页眉 -->
+  <header class="bg-blue-600 text-white py-2 fixed w-full z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <!-- 电话信息 -->
+        <div class="flex items-center space-x-6">
+          <div class="flex items-center">
+            <i class="fa fa-phone mr-2"></i>
+            <span class="lang zh">总经理：13377619173</span>
+            <span class="lang en hidden">General Manager：13377619173</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fa fa-phone mr-2"></i>
+            <span class="lang zh">销售：18733329660</span>
+            <span class="lang en hidden">Sales：18733329660</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fa fa-phone mr-2"></i>
+            <span class="lang zh">销售：18510133991</span>
+            <span class="lang en hidden">Sales：18510133991</span>
+          </div>
+        </div>
         
-        <section class="contact-grid">
-            <div class="contact-info">
-                <h2>联系方式</h2>
-                <div class="contact-item">
-                    <h3>📍 地址</h3>
-                    <p>北京市朝阳区某某街道123号</p>
-                </div>
-                <div class="contact-item">
-                    <h3>📞 电话</h3>
-                    <p>+86 123-4567-8900</p>
-                </div>
-                <div class="contact-item">
-                    <h3>📧 邮箱</h3>
-                    <p>info@company.com</p>
-                </div>
-                <div class="contact-item">
-                    <h3>🕐 工作时间</h3>
-                    <p>周一至周五 9:00 - 18:00</p>
-                </div>
+        <!-- 中英文切换 -->
+        <div class="flex items-center space-x-4">
+          <button class="px-3 py-1 bg-white text-blue-600 rounded hover:bg-blue-50 transition-colors" data-lang="zh">中文</button>
+          <button class="px-3 py-1 bg-transparent border border-white rounded hover:bg-white hover:text-blue-600 transition-colors" data-lang="en">English</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 导航栏 -->
+  <nav class="bg-white shadow-md fixed w-full z-40 pt-16">
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <!-- 自定义LOGO图片 -->
+          <img src="/src/images/logo.png" alt="北京市京徽龙江科技有限公司" class="h-20 mr-4">
+          <!-- LOGO文字 -->
+          <span class="text-3xl font-bold text-blue-600 lang zh">北京市京徽龙江科技有限公司</span>
+          <span class="text-3xl font-bold text-blue-600 lang en hidden">Beijing Jinghui Longjiang Technology Co., Ltd.</span>
+        </a>
+        
+        <!-- 桌面导航 -->
+        <div class="hidden md:flex space-x-10 ml-[151px]">
+          <a href="index.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
+            <span class="lang zh">首页</span>
+            <span class="lang en hidden">Home</span>
+          </a>
+          <a href="about.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
+            <span class="lang zh">企业文化</span>
+            <span class="lang en hidden">Corporate Culture</span>
+          </a>
+          <a href="products.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
+            <span class="lang zh">产品</span>
+            <span class="lang en hidden">Products</span>
+          </a>
+          <a href="team.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
+            <span class="lang zh">团队</span>
+            <span class="lang en hidden">Team</span>
+          </a>
+          <a href="contact.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors py-3">
+            <span class="lang zh">联系我们</span>
+            <span class="lang en hidden">Contact Us</span>
+          </a>
+        </div>
+        
+        <!-- 移动端菜单按钮 -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-600 hover:text-blue-600">
+            <i class="fa fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- 移动端导航菜单 -->
+      <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+        <a href="index.html" class="block py-2 hover:text-blue-600">
+          <span class="lang zh">首页</span>
+          <span class="lang en hidden">Home</span>
+        </a>
+        <a href="about.html" class="block py-2 hover:text-blue-600">
+          <span class="lang zh">企业文化</span>
+          <span class="lang en hidden">Corporate Culture</span>
+        </a>
+        <a href="products.html" class="block py-2 hover:text-blue-600">
+          <span class="lang zh">产品</span>
+          <span class="lang en hidden">Products</span>
+        </a>
+        <a href="team.html" class="block py-2 hover:text-blue-600">
+          <span class="lang zh">团队</span>
+          <span class="lang en hidden">Team</span>
+        </a>
+        <a href="contact.html" class="block py-2 text-blue-600 font-medium">
+          <span class="lang zh">联系我们</span>
+          <span class="lang en hidden">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 页面标题 -->
+  <section class="pt-40 pb-16 bg-blue-50">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center">
+        <span class="lang zh">联系我们</span>
+        <span class="lang en hidden">Contact Us</span>
+      </h1>
+      <p class="text-gray-600 text-center mt-4 max-w-2xl mx-auto">
+        <span class="lang zh">无论您有任何问题或需求，都可以通过以下方式联系我们，我们将竭诚为您服务</span>
+        <span class="lang en hidden">No matter what questions or needs you have, you can contact us through the following methods, and we will serve you wholeheartedly</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 联系信息 -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row gap-12">
+
+        
+        <!-- 联系信息 -->
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold mb-8">
+            <span class="lang zh">联系信息</span>
+            <span class="lang en hidden">Contact Information</span>
+          </h2>
+          
+          <!-- 联系方式 -->
+          <div class="space-y-6 mb-12">
+            <div class="flex items-start">
+              <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <i class="fa fa-map-marker text-blue-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">
+                  <span class="lang zh">地址</span>
+                  <span class="lang en hidden">Address</span>
+                </h3>
+                <p class="text-gray-600">
+                  <span class="lang zh">总部地址：北京市通州区宋庄镇喇嘛庄村北东马地</span>
+                  <span class="lang en hidden">Headquarters Address: North East Madi, Lama Village, Songzhuang Town, Tongzhou District, Beijing</span>
+                </p>
+                <p class="text-gray-600 mt-2">
+                  <span class="lang zh">生产基地：河北省三河市燕郊经济技术开发区燕昌204号路</span>
+                  <span class="lang en hidden">Production Base: Yanchang Road 204, Yanjiao Economic and Technological Development Zone, Sanhe City, Hebei Province</span>
+                </p>
+              </div>
             </div>
             
-            <div class="contact-form">
-                <h2>发送消息</h2>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">姓名</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">邮箱</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">电话</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">消息</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">发送消息</button>
-                </form>
+            <div class="flex items-start">
+              <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <i class="fa fa-phone text-blue-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">
+                  <span class="lang zh">电话</span>
+                  <span class="lang en hidden">Phone</span>
+                </h3>
+                <p class="text-gray-600">
+                  <span class="lang zh">总经理：13377619173</span>
+                  <span class="lang en hidden">General Manager：13377619173</span>
+                </p>
+                <p class="text-gray-600 mt-1">
+                  <span class="lang zh">销售：18733329660</span>
+                  <span class="lang en hidden">Sales：18733329660</span>
+                </p>
+                <p class="text-gray-600 mt-1">
+                  <span class="lang zh">销售：18510133991</span>
+                  <span class="lang en hidden">Sales：18510133991</span>
+                </p>
+              </div>
             </div>
-        </section>
+            
+            <div class="flex items-start">
+              <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <i class="fa fa-envelope text-blue-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">
+                  <span class="lang zh">邮箱</span>
+                  <span class="lang en hidden">Email</span>
+                </h3>
+                <p class="text-gray-600">80725764@qq.com</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <i class="fa fa-clock-o text-blue-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">
+                  <span class="lang zh">工作时间</span>
+                  <span class="lang en hidden">Working Hours</span>
+                </h3>
+                <p class="text-gray-600">
+                  <span class="lang zh">周一至周六：早8:00-17:00</span>
+                  <span class="lang en hidden">Monday to Saturday: 8:00 AM - 5:00 PM</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 社交媒体 -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">
+              <span class="lang zh">关注我们</span>
+              <span class="lang en hidden">Follow Us</span>
+            </h3>
+            <div class="flex space-x-4">
+              <a href="#" class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                <i class="fa fa-weixin text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- 地图 -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">
+        <span class="lang zh">我们的位置</span>
+        <span class="lang en hidden">Our Location</span>
+      </h2>
+      <div class="rounded-lg overflow-hidden shadow-lg h-96">
+        <!-- 高德地图嵌入 -->
+        <iframe src="https://www.amap.com/place/B000A75BQU" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- 页脚 -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- 公司信息 -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">
+            <span class="lang zh">北京市京徽龙江科技有限公司</span>
+            <span class="lang en hidden">Beijing Jinghui Longjiang Technology Co., Ltd.</span>
+          </h3>
+          <p class="text-gray-400 mb-4">
+            <span class="lang zh">作为一个新型的高新技术企业,公司始终坚持“团结拼搏、自我加压、争创一流”的企业精神,坚持“质量第一、信誉至上、行胜于言、打造满意服务”的经营理念,使公司上下形成团结一致,拼搏奋进的良好工作氛围,增强企业的凝聚力和向心力。</span>
+            <span class="lang en hidden">As a new high-tech enterprise, the company always adheres to the enterprise spirit of "unity and hard work, self-pressure, and striving for first-class", and adheres to the business philosophy of "quality first, reputation first, action speaks louder than words, and creating satisfactory service", so that the company has formed a good working atmosphere of unity and hard work, enhancing the cohesion and centripetal force of the enterprise.</span>
+          </p>
+          <p class="text-gray-400 mb-4">
+            <span class="lang zh">我们坚信“质量出效益,服务树形象”。质量方针∶强化质量管理,持续提升产品质量，坚持优质服务,不断满足用户需求。</span>
+            <span class="lang en hidden">We firmly believe that "quality brings benefits, service builds image". Quality policy: strengthen quality management, continuously improve product quality, adhere to high-quality service, and constantly meet user needs.</span>
+          </p>
+          <p class="text-gray-400 mb-4">
+            <span class="lang zh">我们本着以诚信为前提、质量为保证、顾客满意为焦点的经营宗旨,愿与国内外朋友真诚合作，共创工业科技行业的明天！</span>
+            <span class="lang en hidden">Based on the business purpose of taking integrity as the premise, quality as the guarantee, and customer satisfaction as the focus, we are willing to sincerely cooperate with friends at home and abroad to create the future of the industrial technology industry!</span>
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fa fa-weixin text-xl"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- 联系信息 -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">
+            <span class="lang zh">联系我们</span>
+            <span class="lang en hidden">Contact Us</span>
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
+              <span class="text-gray-400">
+                <span class="lang zh">总部地址：北京市通州区宋庄镇喇嘛庄村北东马地</span>
+                <span class="lang en hidden">Headquarters Address: North East Madi, Lama Village, Songzhuang Town, Tongzhou District, Beijing</span>
+              </span>
+            </li>
+            <li class="flex items-start">
+              <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
+              <span class="text-gray-400">
+                <span class="lang zh">生产基地：河北省三河市燕郊经济技术开发区燕昌204号路</span>
+                <span class="lang en hidden">Production Base: Yanchang Road 204, Yanjiao Economic and Technological Development Zone, Sanhe City, Hebei Province</span>
+              </span>
+            </li>
+            <li class="flex items-start">
+              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
+              <span class="text-gray-400">
+                <span class="lang zh">总经理：13377619173</span>
+                <span class="lang en hidden">General Manager：13377619173</span>
+              </span>
+            </li>
+            <li class="flex items-start">
+              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
+              <span class="text-gray-400">
+                <span class="lang zh">销售：18733329660</span>
+                <span class="lang en hidden">Sales：18733329660</span>
+              </span>
+            </li>
+            <li class="flex items-start">
+              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
+              <span class="text-gray-400">
+                <span class="lang zh">销售：18510133991</span>
+                <span class="lang en hidden">Sales：18510133991</span>
+              </span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa fa-envelope text-gray-400 mr-3"></i>
+              <span class="text-gray-400">80725764@qq.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>
+          <span class="lang zh">&copy; 2026 北京市京徽龙江科技有限公司. 保留所有权利.</span>
+          <span class="lang en hidden">&copy; 2026 Beijing Jinghui Longjiang Technology Co., Ltd. All rights reserved.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // 移动端菜单切换（存在元素时才绑定）
+    (function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    })();
     
-    <footer>
-        <p>&copy; 2024 公司名称. 保留所有权利.</p>
-    </footer>
+    // 动态调整页面内容上边距，确保不被导航栏覆盖
+    function adjustContentPadding() {
+      const nav = document.querySelector('nav');
+      const mainContent = document.querySelector('section');
+      if (nav && mainContent) {
+        const navHeight = nav.offsetHeight;
+        mainContent.style.paddingTop = `${navHeight + 20}px`;
+      }
+    }
+    
+    // 中英文切换功能
+    document.addEventListener('DOMContentLoaded', function() {
+      // 调整内容上边距
+      adjustContentPadding();
+      
+      // 窗口大小改变时重新调整
+      window.addEventListener('resize', adjustContentPadding);
+      
+      // 获取语言切换按钮
+      const langButtons = document.querySelectorAll('header button[data-lang]');
+      
+      // 添加点击事件监听器
+      langButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const selectedLang = this.getAttribute('data-lang');
+          
+          // 移除所有按钮的活动状态
+          langButtons.forEach(btn => {
+            btn.classList.remove('bg-white', 'text-blue-600');
+            btn.classList.add('bg-transparent', 'border', 'border-white');
+          });
+          
+          // 添加当前按钮的活动状态
+          this.classList.remove('bg-transparent', 'border', 'border-white');
+          this.classList.add('bg-white', 'text-blue-600');
+          
+          // 切换显示语言内容
+          document.querySelectorAll('.lang').forEach(element => {
+            element.classList.add('hidden');
+          });
+          document.querySelectorAll(`.lang.${selectedLang}`).forEach(element => {
+            element.classList.remove('hidden');
+          });
+          
+          // 语言切换后重新调整内容上边距
+          adjustContentPadding();
+        });
+      });
+      
+      // 常见问题折叠面板（存在对应结构时才绑定）
+      document.querySelectorAll('.border.border-gray-200').forEach(item => {
+        const button = item.querySelector('button');
+        const content = item.querySelector('.bg-white');
+        if (!button || !content) return;
+        
+        button.addEventListener('click', function() {
+          content.classList.toggle('hidden');
+          const icon = this.querySelector('i');
+          if (!icon) return;
+          if (icon.classList.contains('fa-chevron-down')) {
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');
+          } else {
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- 在线咨询小窗口 -->
+  <div id="online-consult" class="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
+    <div class="relative">
+      <button id="consult-toggle" class="bg-blue-600 text-white px-4 py-3 rounded-l-lg shadow-lg hover:bg-blue-700 transition-colors flex items-center">
+        <i class="fa fa-comments text-xl mr-2"></i>
+        <span class="lang zh">在线咨询</span>
+        <span class="lang en hidden">Online Consult</span>
+      </button>
+      <div id="consult-content" class="hidden absolute right-14 top-0 bg-white rounded-lg shadow-xl p-4 w-64">
+        <div class="text-center">
+          <h3 class="text-lg font-bold mb-3 text-gray-800">
+            <span class="lang zh">联系我们</span>
+            <span class="lang en hidden">Contact Us</span>
+          </h3>
+          <div class="mb-4">
+            <img src="/src/images/wechat-qr.png" alt="微信二维码" class="w-40 h-40 mx-auto object-contain border border-gray-200 rounded" loading="lazy" decoding="async">
+          </div>
+          <p class="text-sm text-gray-600 mb-2">
+            <span class="lang zh">扫描二维码</span>
+            <span class="lang en hidden">Scan QR Code</span>
+          </p>
+          <p class="text-sm text-gray-600 mb-3">
+            <span class="lang zh">添加微信详细了解</span>
+            <span class="lang en hidden">Add WeChat for details</span>
+          </p>
+          <div class="border-t pt-3 mt-3">
+            <p class="text-sm text-gray-600 mb-1">
+              <span class="lang zh">电话咨询</span>
+              <span class="lang en hidden">Phone Consult</span>
+            </p>
+            <p class="text-sm font-bold text-blue-600">13377619173</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('consult-toggle').addEventListener('click', function() {
+      const content = document.getElementById('consult-content');
+      content.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
