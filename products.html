@@ -1,1050 +1,476 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>产品 - 京徽龙江-致欣科技</title>
-  <meta name="description" content="京徽龙江-致欣科技的产品系列，包括企业级管理系统、数据分析平台等。">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/src/css/style.css">
+    <!-- 文档类型声明 -->
+    <meta charset="UTF-8"> <!-- 字符编码设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计设置 -->
+    <title>产品中心 - 北京市京徽龙江科技有限公司</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 外部样式表引入 -->
 </head>
-<body class="font-sans text-gray-800">
-  <!-- 顶部页眉 -->
-  <header class="bg-blue-600 text-white py-2 fixed w-full z-50">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center">
-        <!-- 电话信息 -->
-        <div class="flex items-center space-x-6">
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">总经理：13377619173</span>
-            <span class="lang en hidden">General Manager：13377619173</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">销售：18733329660</span>
-            <span class="lang en hidden">Sales：18733329660</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">销售：18510133991</span>
-            <span class="lang en hidden">Sales：18510133991</span>
-          </div>
+<body>
+    <!-- 导航栏 -->
+    <!-- 功能：提供网站主要页面的导航链接，支持移动端响应式菜单 -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- 公司logo -->
+            <div class="logo">
+                <img src="img/logo.png" alt="北京市京徽龙江科技有限公司LOGO" class="logo-img">
+                <h1>北京市京徽龙江科技有限公司</h1>
+            </div>
+            
+            <!-- 导航链接 -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="culture.html" class="nav-link">企业文化</a></li>
+                <li><a href="team.html" class="nav-link">团队介绍</a></li>
+                <li><a href="products.html" class="nav-link active">产品中心</a></li>
+                <li><a href="news.html" class="nav-link">新闻动态</a></li>
+                <li><a href="contact.html" class="nav-link">联系我们</a></li>
+            </ul>
+            
+            <!-- 移动端菜单按钮 -->
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-        
-        <!-- 中英文切换 -->
-        <div class="flex items-center space-x-4">
-          <button class="px-3 py-1 bg-white text-blue-600 rounded hover:bg-blue-50 transition-colors" data-lang="zh">中文</button>
-          <button class="px-3 py-1 bg-transparent border border-white rounded hover:bg-white hover:text-blue-600 transition-colors" data-lang="en">English</button>
+    </nav>
+
+
+    <main>
+        <!-- 产品中心页面 -->
+        <!-- 功能：展示公司的产品信息、产品优势和资质荣誉 -->
+        <section id="products" class="section">
+            <!-- 我们的产品 -->
+            <!-- 功能：展示产品页面的标题 -->
+            <div class="products-header">
+                <div class="container">
+                    <h2>我们的产品</h2>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <!-- 产品网格 -->
+                <!-- 功能：以网格布局展示所有产品 -->
+                <div class="products-grid">
+                    <!-- 产品项 -->
+                    <!-- 功能：展示单个产品的详细信息 -->
+                    <div class="product-item">
+                        <!-- 产品图片 -->
+                        <div class="product-image">
+                            <img src="images/炉管清洗机.jpg" alt="炉管清洗机">
+                        </div>
+                        <h3>炉管清洗机</h3>
+                        <p>本设备所涉及单槽炉管清洗机的外形结构采用如图所示的结构。整机主要由机架、操作台面、引风装置、台面照明、电控单元及清洗槽体等组成。</p>
+                        <!-- 产品特点列表 -->
+                        <ul class="product-features">
+                            <li>模块化设计，可按需定制</li>
+                            <li>实时数据统计与分析</li>
+                            <li>高度安全，数据加密存储</li>
+                        </ul>
+                        <!-- 产品优势 -->
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的HMI管理系统采用模块化设计，支持按需定制，可与现有系统无缝集成。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/CDS供液设备.jpg" alt="CDS供液设备">
+                        </div>
+                        <h3>CDS供液设备</h3>
+                        <p>本设备主要由本体，输送系统，电气控制系统，排风系统以及消防系统组成，本体CDS壳体采用象牙白PVC材料接而成，耐酸碱腐蚀。</p>
+                        <ul class="product-features">
+                            <li>实时数据处理能力</li>
+                            <li>漏液保护功能</li>
+                            <li>低位报警系统</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>本控制系统根据接收清洗设备发出的供液需求信号，通过气动隔膜泵将所需要的化学液输送给所请求的设备。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/甩干机.jpg" alt="甩干机">
+                        </div>
+                        <h3>甩干机</h3>
+                        <p>腔体加热功能是在清洗腔体顶部设置有高性能加热"毯"，以便在最短时间内将"水滴"气化，提高生产效率和防止水滴再污染。</p>
+                        <ul class="product-features">
+                            <li>腔体加热功能，快速气化水滴</li>
+                            <li>提高生产效率，防止再污染</li>
+                            <li>高效甩干，脱水效果好</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的客户关系管理系统提供360度客户视图，帮助企业全面了解客户需求和行为。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/全自动晶圆去胶清洗机.jpg" alt="全自动晶圆去胶清洗机">
+                        </div>
+                        <h3>全自动晶圆去胶清洗机</h3>
+                        <p>由以下部分组成，本体、对中机构、单片去胶单元（每套去胶单元包括4个胶腔及上下片平台）、气体检测系统、灭火系统、管路系统、排风系统、电控系统，自动供液系统等部分组成。</p>
+                        <ul class="product-features">
+                            <li>执行力度稳定，片盒清洗效果佳</li>
+                            <li>节省人工操作时间线管理</li>
+                            <li>机器人协作与自动化</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的项目管理系统支持任务分解与分配，帮助团队明确职责和工作范围。系统提供时间线管理，直观展示项目进度和依赖关系，确保项目按时交付。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/无机清洗机.jpg" alt="无机清洗机">
+                        </div>
+                        <h3>无机清洗机</h3>
+                        <p>半导体器件制造过程湿法清洗。</p>
+                        <ul class="product-features">
+                            <li>可视化编辑界面</li>
+                            <li>配方管理</li>
+                            <li>多用户权限管理</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的HMI管理系统提供可视化编辑界面，无需专业技术知识即可轻松创建和更新。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/去胶机.jpg" alt="去胶机">
+                        </div>
+                        <h3>去胶机</h3>
+                        <p>半导体器件制造过程湿法清洗。</p>
+                        <ul class="product-features">
+                            <li>开门报警通知</li>
+                            <li>漏液传感器</li>
+                            <li>压力检测报警</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>本设备具有开门报警提示、配备漏液传感器，设备具有氮气正压充气、排风压力检测报警功能，机械手臂防护。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/单片无机清洗机.jpg" alt="单片无机清洗机">
+                        </div>
+                        <h3>单片无机清洗机</h3>
+                        <p>半导体器件制造过程湿法清洗设备，用于去除晶圆表面的无机污染物。</p>
+                        <ul class="product-features">
+                            <li>高精度清洗工艺</li>
+                            <li>全自动操作流程</li>
+                            <li>环保清洗剂</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>采用先进的清洗工艺，能够有效去除晶圆表面的无机污染物，确保芯片制造质量。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/石英管清洗机.jpg" alt="石英管清洗机">
+                        </div>
+                        <h3>石英管清洗机</h3>
+                        <p>高效的工业清洗设备，专为石英管清洗设计，确保高精度和高质量的清洗效果。</p>
+                        <ul class="product-features">
+                            <li>快速清洗，节约时间</li>
+                            <li>恒温控制，清洗均匀</li>
+                            <li>大容量设计，处理能力强</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的石英管清洗设备采用先进的清洗技术，能够快速有效地去除石英管表面的顽固污染和杂质。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/显影腐蚀机.jpg" alt="显影腐蚀机">
+                        </div>
+                        <h3>显影腐蚀机</h3>
+                        <p>高精度的工业显影腐蚀设备，用于半导体制造过程中的显影和腐蚀处理。确保高精度和高质量的处理效果。</p>
+                        <ul class="product-features">
+                            <li>高精度清洗，效果显著</li>
+                            <li>易清洗，维护方便</li>
+                            <li>新材料，使用寿命长</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的显影腐蚀设备采用高精度显影和腐蚀技术，能够精确处理半导体制造过程中的显影和腐蚀需求。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/全自动超声波清洗机.jpg" alt="全自动超声波清洗机">
+                        </div>
+                        <h3>全自动超声波清洗机</h3>
+                        <p>高效的工业超声波清洗设备，用于各种精密零件的清洗，提升产品清洁度和质量。</p>
+                        <ul class="product-features">
+                            <li>高效清洗，清洁度高</li>
+                            <li>节能设计，运行成本低</li>
+                            <li>自动化控制，操作简便</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的全自动超声波清洗设备采用先进的超声波清洗技术，能够高效清洗各种精密零件。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/刻蚀清洗机.jpg" alt="刻蚀清洗机">
+                        </div>
+                        <h3>刻蚀清洗机</h3>
+                        <p>高效的工业刻蚀清洗设备，用于半导体制造过程中的刻蚀后清洗，确保产品表面洁净度。</p>
+                        <ul class="product-features">
+                            <li>均匀清洗，效果好</li>
+                            <li>快速清洗，节约时间</li>
+                            <li>大容量设计，处理能力强</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的刻蚀清洗设备采用先进的流体清洗技术，能够快速均匀地清洁各种半导体材料。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 产品项 -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="images/蓝宝石片清洗机.jpg" alt="蓝宝石片清洗机">
+                        </div>
+                        <h3>蓝宝石片清洗机</h3>
+                        <p>高效的工业蓝宝石片清洗设备，用于蓝宝石基板的高效清洗，确保产品表面洁净度和质量。</p>
+                        <ul class="product-features">
+                            <li>高效清洗，节约人力</li>
+                            <li>稳定可靠，运行安全</li>
+                            <li>可定制化设计，适应不同需求</li>
+                        </ul>
+                        <div class="product-advantage">
+                            <h4>产品特点</h4>
+                            <p>我们的蓝宝石片清洗设备采用先进的清洗技术，能够高效稳定地清洗各种蓝宝石基板。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品优势 -->
+        <!-- 功能：展示公司产品的核心优势 -->
+        <section class="product-advantages">
+            <div class="container">
+                <h2>我们的产品优势</h2>
+                <p class="advantage-description">京徽龙江-致欣科技的产品具有以下核心优势，为企业提供卓越的数字化解决方案</p>
+                <!-- 优势网格 -->
+                <div class="advantages-grid">
+                    <!-- 优势项 -->
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <span>&lt;/&gt;</span>
+                        </div>
+                        <h3>自主研发</h3>
+                        <p>所有产品均为自主研发，拥有完全的知识产权，可根据客户需求进行定制化开发。</p>
+                    </div>
+                    
+                    <!-- 优势项 -->
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <span>⚙️</span>
+                        </div>
+                        <h3>技术领先</h3>
+                        <p>采用前沿技术架构，确保产品性能优异，安全性高，可扩展性强。</p>
+                    </div>
+                    
+                    <!-- 优势项 -->
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <span>👤</span>
+                        </div>
+                        <h3>用户友好</h3>
+                        <p>注重用户体验设计，界面直观易用，操作流程简洁。</p>
+                    </div>
+                    
+                    <!-- 优势项 -->
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <span>🛠️</span>
+                        </div>
+                        <h3>贴心服务</h3>
+                        <p>提供7x24小时技术支持，确保产品稳定运行和持续优化。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 资质荣誉 -->
+        <!-- 功能：展示公司获得的资质和荣誉证书，使用滚动效果 -->
+        <section class="certifications">
+            <div class="container">
+                <h2>资质荣誉</h2>
+                <p class="certification-description">京徽龙江-致欣科技凭借专业的技术实力和服务，获得了多项行业资质和荣誉认证。</p>
+                <!-- 资质滚动条 -->
+                <div class="certification-slider">
+                    <div class="certification-track">
+                        <!-- 资质项 -->
+                        <div class="certification-item">
+                            <img src="images/certificate1.jpg" alt="质量管理体系认证">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate2.jpg" alt="企业注册证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate3.jpg" alt="企业注册证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate4.jpg" alt="高新技术企业证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate5.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate6.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate7.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate8.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate9.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate10.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate11.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate12.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate13.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate14.jpg" alt="行业标准合规证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate15.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate16.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate17.jpg" alt="专业资格证书">
+                        </div>
+
+                        <!-- 复制一份内容，使滚动效果无缝衔接 -->
+                        <div class="certification-item">
+                            <img src="images/certificate1.jpg" alt="质量管理体系认证">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate2.jpg" alt="企业注册证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate3.jpg" alt="企业注册证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate4.jpg" alt="高新技术企业证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate5.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate6.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate7.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate8.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate9.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate10.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate11.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate12.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate13.jpg" alt="专业资格证书">
+                        </div>
+                        <div class="certification-item">
+                            <img src="images/certificate14.jpg" alt="行业标准合规证书">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 公司联系信息 -->
+    <!-- 功能：展示公司详细信息和联系方式 -->
+    <div class="company-contact">
+        <div class="container">
+            <!-- 左侧公司介绍 -->
+            <div class="contact-info-left">
+                <h3>北京市京徽龙江科技有限公司</h3>
+                <p>作为一个新型的高新技术企业,公司始终坚持"团结拼搏、自我加压、争创一流"的企业精神,坚持"质量第一、信誉至上、行胜于言、打造满意服务"的经营理念,使公司上下形成团结一致,拼搏奋进的良好工作氛围,增强企业的凝聚力和向心力。</p>
+                <p>我们坚信"质量出效益,服务树形象"。质量方针：强化质量管理,持续提升产品质量，坚持优质服务,不断满足用户需求。</p>
+                <p>我们本着以诚信为前提、质量为保证、顾客满意为焦点的经营宗旨,愿与国内外朋友真诚合作，共创工业科技行业的明天!</p>
+            </div>
+            
+            <!-- 右侧联系信息 -->
+            <div class="contact-info-right">
+                <h3>联系我们</h3>
+                <p><strong>总部地址：</strong>北京市通州区宋庄镇喇嘛庄村北东马地</p>
+                <p><strong>生产基地：</strong>河北省三河市燕郊经济技术开发区燕昌204号路</p>
+                <p><strong>总经理：</strong>13377619173</p>
+                <p><strong>销售：</strong>18733329660</p>
+                <p><strong>销售：</strong>18510133991</p>
+                <p><strong>邮箱：</strong>80725764@qq.com</p>
+            </div>
         </div>
-      </div>
     </div>
-  </header>
 
-  <!-- 导航栏 -->
-  <nav class="bg-white shadow-md fixed w-full z-40 pt-16">
-    <div class="max-w-7xl mx-auto px-4 py-8">
-      <div class="flex justify-between items-center">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center">
-          <!-- 自定义LOGO图片 -->
-          <img src="/src/images/logo.png" alt="北京市京徽龙江科技有限公司" class="h-20 mr-4">
-          <!-- LOGO文字 -->
-          <span class="text-3xl font-bold text-blue-600 lang zh">北京市京徽龙江科技有限公司</span>
-          <span class="text-3xl font-bold text-blue-600 lang en hidden">Beijing Jinghui Longjiang Technology Co., Ltd.</span>
-        </a>
-        
-        <!-- 桌面导航 -->
-        <div class="hidden md:flex space-x-10 ml-[151px]">
-          <a href="index.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">首页</span>
-            <span class="lang en hidden">Home</span>
-          </a>
-          <a href="about.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">企业文化</span>
-            <span class="lang en hidden">Culture</span>
-          </a>
-          <a href="products.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors py-3">
-            <span class="lang zh">产品</span>
-            <span class="lang en hidden">Products</span>
-          </a>
-          <a href="team.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">团队</span>
-            <span class="lang en hidden">Team</span>
-          </a>
-          <a href="contact.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact</span>
-          </a>
+    <!-- 页脚 -->
+    <!-- 功能：显示版权信息 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2006-2026 北京市京徽龙江科技有限公司 版权所有</p>
         </div>
-        
-        <!-- 移动端菜单按钮 -->
-        <div class="md:hidden">
-          <button id="menu-toggle" class="text-gray-600 hover:text-blue-600">
-            <i class="fa fa-bars text-xl"></i>
-          </button>
-        </div>
-      </div>
-      
-      <!-- 移动端导航菜单 -->
-        <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
-          <a href="index.html" class="block py-2 hover:text-blue-600">
-            <span class="lang zh">首页</span>
-            <span class="lang en hidden">Home</span>
-          </a>
-          <a href="about.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">企业文化</span>
-          <span class="lang en hidden">Culture</span>
-        </a>
-        <a href="products.html" class="block py-2 text-blue-600 font-medium">
-          <span class="lang zh">产品</span>
-          <span class="lang en hidden">Products</span>
-        </a>
-          <a href="team.html" class="block py-2 hover:text-blue-600">
-            <span class="lang zh">团队</span>
-            <span class="lang en hidden">Team</span>
-          </a>
-          <a href="contact.html" class="block py-2 hover:text-blue-600">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact</span>
-          </a>
-        </div>
-    </div>
-  </nav>
+    </footer>
 
-  <!-- 页面标题 -->
-  <section class="pt-40 pb-16 bg-blue-50">
-    <div class="container mx-auto px-4">
-      <h1 class="text-4xl font-bold text-center">
-        <span class="lang zh">我们的产品</span>
-        <span class="lang en hidden">Our Products</span>
-      </h1>
-      <p class="text-gray-600 text-center mt-4 max-w-2xl mx-auto">
-        <span class="lang zh">京徽龙江-致欣科技自主研发的产品系列，为企业提供全方位的解决方案</span>
-        <span class="lang en hidden">Beijing Jinghui Longjiang Technology's independently developed product series, providing comprehensive digital solutions for enterprises</span>
-      </p>
-    </div>
-  </section>
-
-  <!-- 产品列表 -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 grid-auto-rows-min">
-        <!-- 产品 1 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/erp.jpg" alt="炉管清洗" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">炉管清洗机</span>
-              <span class="lang en hidden">Furnace Tube Cleaning Machine</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">本设备所涉及单槽炉管清洗机的外形结构采用如图所示的结构。整机主要由机架、操作台面、引风装置、台面照明、电控单元及清洗槽体等组成。</span>
-              <span class="lang en hidden">An enterprise management system integrating human resources, finance, procurement, sales and other modules, helping enterprises realize information management and improve operational efficiency.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">模块化设计，可按需定制</span>
-                  <span class="lang en hidden">Modular design, customizable on demand</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">实时数据统计与分析</span>
-                  <span class="lang en hidden">Real-time data statistics and analysis</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">高度安全，数据加密存储</span>
-                  <span class="lang en hidden">Highly secure, encrypted data storage</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的HMI管理系统采用模块化设计，支持按需定制，可与现有系统无缝集成。</span>
-                <span class="lang en hidden">Our enterprise management system adopts a modular design, supports on-demand customization, and can seamlessly integrate with existing systems.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 产品 2 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/analytics.jpg" alt="CDS供液设备" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">CDS供液设备</span>
-              <span class="lang en hidden">CDS Liquid Supply Equipment</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">本设备主要由本体，输送系统，电气控制系统，排风系统以及消防系统组成，本体CDS壳体采用象牙白PVC材料接而成，耐酸碱腐蚀。</span>
-              <span class="lang en hidden">A big data technology-based analysis platform that helps enterprises mine data value and make more informed business decisions.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">实时数据处理能力</span>
-                  <span class="lang en hidden">Real-time data processing capability</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">漏液保护功能</span>
-                  <span class="lang en hidden">Liquid leakage protection</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">低液位报警系统</span>
-                  <span class="lang en hidden">Low liquid level alarm</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">本控制系统根据接收清洗设备发出的供液请求信号，通过气动隔膜泵将所需要的化学液输送给所请求的设备。</span>
-                <span class="lang en hidden">Our data analysis platform is based on big data technology, supporting massive data processing and real-time analysis.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 产品 3 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/crm.jpg" alt="甩干机" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">甩干机</span>
-              <span class="lang en hidden">Spin Dryer</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">腔体加热功能是在清洗腔体顶部设置有高性能加热"毯"，以便在最短时间内将"水滴"气化，提高生产效率和防止水滴再污染。</span>
-              <span class="lang en hidden">A professional system that helps enterprises manage customer information, track sales leads, and improve customer satisfaction and loyalty.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">腔体加热功能，快速气化水滴</span>
-                  <span class="lang en hidden">360-degree customer view</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">提高生产效率，防止再污染</span>
-                  <span class="lang en hidden">Sales lead tracking</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">高效甩干，脱水效果好</span>
-                  <span class="lang en hidden">Customer service management</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的客户关系管理系统提供360度客户视图，帮助企业全面了解客户需求和行为。</span>
-                <span class="lang en hidden">Our customer relationship management system provides a 360-degree customer view, helping enterprises fully understand customer needs and behaviors.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- 产品 4 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/project.jpg" alt="晶圆去胶系统" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">全自动晶圆去胶清洗机</span>
-              <span class="lang en hidden">Wafer Degumming</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">由以下部分组成，本体、对中机构、单片去胶单元（每套去胶单元包括4个去胶腔及上下片平台）、气体检测系统、灭火系统、管路系统、排风系统、电气控制系统，自动供液系统等部分组成。</span>
-              <span class="lang en hidden">A professional system that helps enterprises plan, execute, and monitor projects, improve project management efficiency, and ensure on-time project delivery.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">执行力度稳定，片盒清洗效果佳</span>
-                  <span class="lang en hidden">Task decomposition and assignment</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">节省人工操作时间线管理</span>
-                  <span class="lang en hidden">Gantt chart timeline management</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">机器人协作与自动化</span>
-                  <span class="lang en hidden">Team collaboration and communication</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的项目管理系统支持任务分解与分配，帮助团队明确职责和工作范围。系统提供时间线管理，直观展示项目进度和依赖关系，确保项目按时交付。</span>
-                <span class="lang en hidden">Our project management system supports task decomposition and assignment, helping teams clarify responsibilities and work scope.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- 产品 5 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/cms.jpg" alt="无机清洗" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">无机清机</span>
-              <span class="lang en hidden">Inorganic Cleaning Machine</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">半导体器件制造过程湿法清洗。</span>
-              <span class="lang en hidden">Wet cleaning equipment for semiconductor device manufacturing process.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">可视化编辑界面</span>
-                  <span class="lang en hidden">Visual control interface</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">配方管理</span>
-                  <span class="lang en hidden">Recipe management</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">多用户权限管理</span>
-                  <span class="lang en hidden">Multi-user permission management</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的HMI管理系统提供可视化编辑界面，无需专业技术知识即可轻松创建配方和更新。</span>
-                <span class="lang en hidden">Our HMI management system provides a visual editing interface, allowing easy recipe creation and updates without professional technical knowledge.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 产品 6 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/ecommerce.jpg" alt="去胶机" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">去胶机</span>
-              <span class="lang en hidden">Degumming Machine</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">半导体器件制造过程湿法清洗。</span>
-              <span class="lang en hidden">Wet cleaning equipment for semiconductor device manufacturing process, used for photoresist removal.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">开门报警通知</span>
-                  <span class="lang en hidden">Door open alarm notification</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">漏液传感器</span>
-                  <span class="lang en hidden">Liquid leakage sensor</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">压力检测报警</span>
-                  <span class="lang en hidden">Pressure detection alarm</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">操作门具有开门报警通知提示，配备漏液传感器，设备具有氮气/压缩空气、排风压力检测报警功能，机械手防撞保护。</span>
-                <span class="lang en hidden">Equipped with door open alarm notification, liquid leakage sensor, nitrogen/compressed air and exhaust pressure detection alarm functions, and robot collision protection.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- 产品 7 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/erRp.jpg" alt="清洗设备" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">单片无机清洗机</span>
-              <span class="lang en hidden">Single Wafer Inorganic Cleaner</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">半导体器件制造过程湿法清洗设备，用于去除晶圆表面的无机污染物。</span>
-              <span class="lang en hidden">Wet cleaning equipment for semiconductor device manufacturing process, used to remove inorganic contaminants from wafer surfaces.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">高精度清洗工艺</span>
-                  <span class="lang en hidden">High precision cleaning process</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">全自动操作流程</span>
-                  <span class="lang en hidden">Fully automated operation</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">环保清洗溶剂</span>
-                  <span class="lang en hidden">Environmentally friendly solvents</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">采用先进的清洗工艺，能够有效去除晶圆表面的无机污染物，确保芯片制造质量。</span>
-                <span class="lang en hidden">Adopts advanced cleaning technology to effectively remove inorganic contaminants from wafer surfaces, ensuring chip manufacturing quality.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- 产品 8 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/analyticsn.jpg" alt="石英管清洗机" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">石英管清洗机</span>
-              <span class="lang en hidden">Quartz Tube Cleaner</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">高效的工业清洗设备，专为石英管清洗设计，确保高精度和高质量的清洗效果。</span>
-              <span class="lang en hidden">Efficient industrial cleaning equipment specifically designed for quartz tube cleaning, ensuring high precision and quality cleaning results.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">快速清洗，节约时间</span>
-                  <span class="lang en hidden">Fast cleaning, time saving</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">恒温控制，清洗均匀</span>
-                  <span class="lang en hidden">Constant temperature control</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">大容量设计，处理能力强</span>
-                  <span class="lang en hidden">Large capacity design</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的石英管清洗设备采用先进的清洗技术，能够快速有效地去除石英管表面的顽固污渍和杂质。</span>
-                <span class="lang en hidden">Our quartz tube cleaning equipment uses advanced cleaning technology to quickly and effectively remove stubborn stains and impurities from quartz tube surfaces.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- 产品 9 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/crmy.jpg" alt="显影腐蚀机" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">显影腐蚀机</span>
-              <span class="lang en hidden">Developing Etching Machine</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">高精度的工业显影腐蚀设备，用于半导体制造过程中的显影和腐蚀处理，确保高精度和高质量的生产效果。</span>
-              <span class="lang en hidden">High-precision industrial developing and etching equipment used for developing and etching processes in semiconductor manufacturing, ensuring high precision and quality production results.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">高精度过滤，效果显著</span>
-                  <span class="lang en hidden">High precision filtering</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">易清洗，维护方便</span>
-                  <span class="lang en hidden">Easy to clean</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">耐用材料，使用寿命长</span>
-                  <span class="lang en hidden">Durable materials</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的显影腐蚀设备采用高精度显影和腐蚀技术，能够精确处理半导体制造过程中的显影和腐蚀需求。</span>
-                <span class="lang en hidden">Our developing and etching equipment uses high-precision developing and etching technology to accurately handle developing and etching needs in semiconductor manufacturing.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 产品 10 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/projecty.jpg" alt="全自动超声波清洗机" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">全自动超声波清洗机</span>
-              <span class="lang en hidden">Automatic Ultrasonic Cleaner</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">高效的工业超声波清洗设备，用于各种精密零件的清洗，提高产品清洁度和质量。</span>
-              <span class="lang en hidden">Efficient industrial ultrasonic cleaning equipment used for cleaning various precision parts, improving product cleanliness and quality.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">高效清洗，清洁度高</span>
-                  <span class="lang en hidden">High efficiency cleaning</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">节能设计，运行成本低</span>
-                  <span class="lang en hidden">Energy saving design</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">自动化控制，操作简便</span>
-                  <span class="lang en hidden">Automatic control</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的全自动超声波清洗设备采用先进的超声波清洗技术，能够高效清洗各种精密零件。</span>
-                <span class="lang en hidden">Our automatic ultrasonic cleaning equipment uses advanced ultrasonic cleaning technology to efficiently clean various precision parts.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 产品 11 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/cmso.jpg" alt="刻蚀清洗机" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">刻蚀清洗机</span>
-              <span class="lang en hidden">Etching Cleaning Machine</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">高效的工业刻蚀清洗设备，用于半导体制造过程中的刻蚀后清洗，确保产品表面洁净度和质量。</span>
-              <span class="lang en hidden">Efficient industrial etching cleaning equipment used for post-etching cleaning in semiconductor manufacturing, ensuring product surface cleanliness and quality.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">均匀清洗，效果好</span>
-                  <span class="lang en hidden">Uniform cleaning</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">快速清洗，节约时间</span>
-                  <span class="lang en hidden">Fast cleaning</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">大容量设计，处理能力强</span>
-                  <span class="lang en hidden">Large capacity design</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的刻蚀清洗设备采用先进的刻蚀清洗技术，能够快速均匀地清洗各种半导体材料。</span>
-                <span class="lang en hidden">Our etching cleaning equipment uses advanced etching cleaning technology to quickly and uniformly clean various semiconductor materials.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 产品 12 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-          <div class="h-64 overflow-hidden flex items-center justify-center bg-gray-100">
-            <img src="/src/images/products/ecommercepi.jpg" alt="蓝宝石片清洗机" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform hover:scale-105" loading="lazy" decoding="async">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-3">
-              <span class="lang zh">蓝宝石片清洗机</span>
-              <span class="lang en hidden">Sapphire Wafer Cleaner</span>
-            </h3>
-            <p class="text-gray-600 mb-4 text-base">
-              <span class="lang zh">高效的工业蓝宝石片清洗设备，用于蓝宝石基板的高效清洗，确保产品表面洁净度和质量。</span>
-              <span class="lang en hidden">Efficient industrial sapphire wafer cleaning equipment used for efficient cleaning of sapphire substrates, ensuring product surface cleanliness and quality.</span>
-            </p>
-            <ul class="space-y-2 mb-6 text-base">
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">高效清洗，节约人力</span>
-                  <span class="lang en hidden">Efficient cleaning, labor saving</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">稳定可靠，运行安全</span>
-                  <span class="lang en hidden">Stable and safe operation</span>
-                </span>
-              </li>
-              <li class="flex items-center">
-                <i class="fa fa-check text-green-500 mr-2"></i>
-                <span>
-                  <span class="lang zh">可定制化设计，适应不同需求</span>
-                  <span class="lang en hidden">Customizable design</span>
-                </span>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <h4 class="text-xl font-semibold mb-2">
-                <span class="lang zh">产品特点</span>
-                <span class="lang en hidden">Product Features</span>
-              </h4>
-              <p class="text-gray-600 mb-4 text-base">
-                <span class="lang zh">我们的蓝宝石片清洗设备采用先进的清洗技术，能够高效稳定地清洗各种蓝宝石基板。</span>
-                <span class="lang en hidden">Our sapphire wafer cleaning equipment uses advanced cleaning technology to efficiently and stably clean various sapphire substrates.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 产品优势 -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">我们的产品优势</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          京徽龙江-致欣科技的产品具有以下核心优势，为企业提供卓越的数字化解决方案
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- 优势 1 -->
-        <div class="bg-white p-8 rounded-lg shadow-md text-center">
-          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="fa fa-code text-blue-600 text-2xl"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">自主研发</h3>
-          <p class="text-gray-600">
-            所有产品均为自主研发，拥有完全的知识产权，可根据客户需求进行定制化开发。
-          </p>
-        </div>
-        
-        <!-- 优势 2 -->
-        <div class="bg-white p-8 rounded-lg shadow-md text-center">
-          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="fa fa-cogs text-blue-600 text-2xl"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">技术领先</h3>
-          <p class="text-gray-600">
-            采用前沿技术架构，确保产品性能优异，安全性高，可扩展性强。
-          </p>
-        </div>
-        
-        <!-- 优势 3 -->
-        <div class="bg-white p-8 rounded-lg shadow-md text-center">
-          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="fa fa-user-circle text-blue-600 text-2xl"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">用户友好</h3>
-          <p class="text-gray-600">
-            注重用户体验设计，界面直观易用，操作流程简洁。
-          </p>
-        </div>
-        
-        <!-- 优势 4 -->
-        <div class="bg-white p-8 rounded-lg shadow-md text-center">
-          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="fa fa-life-ring text-blue-600 text-2xl"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">贴心服务</h3>
-          <p class="text-gray-600">
-            提供7x24小时技术支持，确保产品稳定运行和持续优化。
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 客户案例 -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">客户案例</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          了解我们的产品如
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- 案例 1 -->
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-          <div class="flex items-center mb-6">
-            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=finance%20company%20logo%20abstract%20design&image_size=square" alt="某金融公司" class="w-16 h-16 rounded-full mr-4" loading="lazy" decoding="async">
-            <div>
-              <h4 class="text-xl font-bold">某偶偶公司</h4>
-              <p class="text-gray-500">清洗行业</p>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">
-            为该清洗行业客户提供了定制化的清洗设备解决方案，显著提升了生产效率和产品质量。
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">清洗机</span>
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">甩干机</span>
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">晶圆机</span>
-          </div>
-          
-        </div>
-        
-        <!-- 案例 2 -->
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-          <div class="flex items-center mb-6">
-            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=manufacturing%20company%20logo%20abstract%20design&image_size=square" alt="某制造企业" class="w-16 h-16 rounded-full mr-4" loading="lazy" decoding="async">
-            <div>
-              <h4 class="text-xl font-bold">某制造企业</h4>
-              <p class="text-gray-500">制造行业</p>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">
-            为该制造企业提供了定制化的自动化生产线解决方案，显著提升了生产效率和产品质量。
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">剥离去胶</span>
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">无机设备</span>
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">制造行业</span>
-          </div>
-          
-        </div>
-        
-        <!-- 案例 3 -->
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-          <div class="flex items-center mb-6">
-            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=retail%20company%20logo%20abstract%20design&image_size=square" alt="某零售企业" class="w-16 h-16 rounded-full mr-4" loading="lazy" decoding="async">
-            <div>
-              <h4 class="text-xl font-bold">某清洗企业</h4>
-              <p class="text-gray-500">清洗行业</p>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">
-            为该清洗企业提供了定制化的清洗设备解决方案，显著提升了客户体验和生产效率。
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">清洗设备</span>
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">清洗工艺</span>
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">清洗行业</span>
-          </div>
-             </div>
-        
-        <!-- 案例 4 -->
-        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-          <div class="flex items-center mb-6">
-            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=healthcare%20company%20logo%20abstract%20design&image_size=square" alt="某医疗企业" class="w-16 h-16 rounded-full mr-4" loading="lazy" decoding="async">
-            <div>
-              <h4 class="text-xl font-bold">某制造企业</h4>
-              <p class="text-gray-500">制造行业</p>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">
-            为该制造企业提供了定制化的自动化生产线解决方案，显著提升了生产效率和产品质量。
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">数据管理系统</span>
-            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">制造行业</span>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- 页脚 -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- 公司信息 -->
-        <div>
-          <h3 class="text-xl font-bold mb-4">北京市京徽龙江科技有限公司</h3>
-          <p class="text-gray-400 mb-4">
-            作为一个新型的高新技术企业,公司始终坚持“团结拼搏、自我加压、争创一流”的企业精神,坚持“质量第一、信誉至上、行胜于言、打造满意服务”的经营理念,使公司上下形成团结一致,拼搏奋进的良好工作氛围,增强企业的凝聚力和向心力。
-          </p>
-          <p class="text-gray-400 mb-4">
-            我们坚信“质量出效益,服务树形象”。质量方针∶强化质量管理,持续提升产品质量，坚持优质服务,不断满足用户需求。
-          </p>
-          <p class="text-gray-400 mb-4">
-            我们本着以诚信为前提、质量为保证、顾客满意为焦点的经营宗旨,愿与国内外朋友真诚合作，共创工业科技行业的明天！
-          </p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-              <i class="fa fa-weixin text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 联系信息 -->
-        <div>
-          <h3 class="text-lg font-bold mb-4">联系我们</h3>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">总部地址：北京市通州区宋庄镇喇嘛庄村北东马地</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">生产基地：河北省三河市燕郊经济技术开发区燕昌204号路</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">总经理：13377619173</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">销售：18733329660</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">销售：18510133991</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fa fa-envelope text-gray-400 mr-3"></i>
-              <span class="text-gray-400">80725764@qq.com</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-        <p>
-          <span class="lang zh">&copy; 2026 北京市京徽龙江科技有限公司. 保留所有权利.</span>
-          <span class="lang en hidden">&copy; 2026 Beijing Jinghui Longjiang Technology Co., Ltd. All rights reserved.</span>
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script>
-    // 移动端菜单切换
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-      const mobileMenu = document.getElementById('mobile-menu');
-      mobileMenu.classList.toggle('hidden');
-    });
-    
-    // 动态调整页面内容上边距，确保不被导航栏覆盖
-    function adjustContentPadding() {
-      const nav = document.querySelector('nav');
-      const mainContent = document.querySelector('section');
-      if (nav && mainContent) {
-        const navHeight = nav.offsetHeight;
-        mainContent.style.paddingTop = `${navHeight + 20}px`;
-      }
-    }
-    
-    // 中英文切换功能
-    document.addEventListener('DOMContentLoaded', function() {
-      // 调整内容上边距
-      adjustContentPadding();
-      
-      // 窗口大小改变时重新调整
-      window.addEventListener('resize', adjustContentPadding);
-      
-      // 获取语言切换按钮
-      const langButtons = document.querySelectorAll('header button[data-lang]');
-      
-      // 添加点击事件监听器
-      langButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          const selectedLang = this.getAttribute('data-lang');
-          
-          // 移除所有按钮的活动状态
-          langButtons.forEach(btn => {
-            btn.classList.remove('bg-white', 'text-blue-600');
-            btn.classList.add('bg-transparent', 'border', 'border-white');
-          });
-          
-          // 添加当前按钮的活动状态
-          this.classList.remove('bg-transparent', 'border', 'border-white');
-          this.classList.add('bg-white', 'text-blue-600');
-          
-          // 切换显示语言内容
-          document.querySelectorAll('.lang').forEach(element => {
-            element.classList.add('hidden');
-          });
-          document.querySelectorAll(`.lang.${selectedLang}`).forEach(element => {
-            element.classList.remove('hidden');
-          });
-          
-          // 语言切换后重新调整内容上边距
-          adjustContentPadding();
-        });
-      });
-    });
-  </script>
-
-  <!-- 在线咨询小窗口 -->
-  <div id="online-consult" class="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
-    <div class="relative">
-      <button id="consult-toggle" class="bg-blue-600 text-white px-4 py-3 rounded-l-lg shadow-lg hover:bg-blue-700 transition-colors flex items-center">
-        <i class="fa fa-comments text-xl mr-2"></i>
-        <span class="lang zh">在线咨询</span>
-        <span class="lang en hidden">Online Consult</span>
-      </button>
-      <div id="consult-content" class="hidden absolute right-14 top-0 bg-white rounded-lg shadow-xl p-4 w-64">
-        <div class="text-center">
-          <h3 class="text-lg font-bold mb-3 text-gray-800">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact Us</span>
-          </h3>
-          <div class="mb-4">
-            <img src="/src/images/wechat-qr.png" alt="微信二维码" class="w-40 h-40 mx-auto object-contain border border-gray-200 rounded">
-          </div>
-          <p class="text-sm text-gray-600 mb-2">
-            <span class="lang zh">扫描二维码</span>
-            <span class="lang en hidden">Scan QR Code</span>
-          </p>
-          <p class="text-sm text-gray-600 mb-3">
-            <span class="lang zh">添加微信详细了解</span>
-            <span class="lang en hidden">Add WeChat for details</span>
-          </p>
-          <div class="border-t pt-3 mt-3">
-            <p class="text-sm text-gray-600 mb-1">
-              <span class="lang zh">电话咨询</span>
-              <span class="lang en hidden">Phone Consult</span>
-            </p>
-            <p class="text-sm font-bold text-blue-600">13377619173</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById('consult-toggle').addEventListener('click', function() {
-      const content = document.getElementById('consult-content');
-      content.classList.toggle('hidden');
-    });
-  </script>
+    <!-- 外部JavaScript引入 -->
+    <!-- 功能：实现导航栏菜单切换和新闻动态分页功能 -->
+    <script src="script.js"></script>
 </body>
 </html>

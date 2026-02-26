@@ -1,875 +1,398 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>团队 - 京徽龙江-致欣科技</title>
-  <meta name="description" content="京徽龙江-致欣科技的核心团队成员，包括管理层和技术专家。">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/src/css/style.css">
+    <!-- 文档类型声明 -->
+    <meta charset="UTF-8"> <!-- 字符编码设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计设置 -->
+    <title>团队介绍 - 北京市京徽龙江科技有限公司</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 外部样式表引入 -->
 </head>
-<body class="font-sans text-gray-800">
-  <!-- 顶部页眉 -->
-  <header class="bg-blue-600 text-white py-2 fixed w-full z-50">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center">
-        <!-- 电话信息 -->
-        <div class="flex items-center space-x-6">
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">总经理：13377619173</span>
-            <span class="lang en hidden">General Manager：13377619173</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">销售：18733329660</span>
-            <span class="lang en hidden">Sales：18733329660</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">销售：18510133991</span>
-            <span class="lang en hidden">Sales：18510133991</span>
-          </div>
+<body>
+    <!-- 导航栏 -->
+    <!-- 功能：提供网站主要页面的导航链接，支持移动端响应式菜单 -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- 公司logo -->
+            <div class="logo">
+                <img src="img/logo.png" alt="北京市京徽龙江科技有限公司LOGO" class="logo-img">
+                <h1>北京市京徽龙江科技有限公司</h1>
+            </div>
+            
+            <!-- 导航链接 -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="culture.html" class="nav-link">企业文化</a></li>
+                <li><a href="team.html" class="nav-link active">团队介绍</a></li>
+                <li><a href="products.html" class="nav-link">产品中心</a></li>
+                <li><a href="news.html" class="nav-link">新闻动态</a></li>
+                <li><a href="contact.html" class="nav-link">联系我们</a></li>
+            </ul>
+            
+            <!-- 移动端菜单按钮 -->
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-        
-        <!-- 中英文切换 -->
-        <div class="flex items-center space-x-4">
-          <button class="px-3 py-1 bg-white text-blue-600 rounded hover:bg-blue-50 transition-colors" data-lang="zh">中文</button>
-          <button class="px-3 py-1 bg-transparent border border-white rounded hover:bg-white hover:text-blue-600 transition-colors" data-lang="en">English</button>
-        </div>
-      </div>
-    </div>
-  </header>
+    </nav>
 
-  <!-- 导航栏 -->
-  <nav class="bg-white shadow-md fixed w-full z-40 pt-16">
-    <div class="max-w-7xl mx-auto px-4 py-8">
-      <div class="flex justify-between items-center">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center">
-          <!-- 自定义LOGO图片 -->
-          <img src="/src/images/logo.png" alt="北京市京徽龙江科技有限公司" class="h-20 mr-4">
-          <!-- LOGO文字 -->
-          <span class="text-3xl font-bold text-blue-600 lang zh">北京市京徽龙江科技有限公司</span>
-          <span class="text-3xl font-bold text-blue-600 lang en hidden">Beijing Jinghui Longjiang Technology Co., Ltd.</span>
-        </a>
-        
-        <!-- 桌面导航 -->
-        <div class="hidden md:flex space-x-10 ml-[151px]">
-          <a href="index.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">首页</span>
-            <span class="lang en hidden">Home</span>
-          </a>
-          <a href="about.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">企业文化</span>
-            <span class="lang en hidden">Corporate Culture</span>
-          </a>
-          <a href="products.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">产品</span>
-            <span class="lang en hidden">Products</span>
-          </a>
-          <a href="team.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors py-3">
-            <span class="lang zh">团队</span>
-            <span class="lang en hidden">Team</span>
-          </a>
-          <a href="contact.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact Us</span>
-          </a>
-        </div>
-        
-        <!-- 移动端菜单按钮 -->
-        <div class="md:hidden">
-          <button id="menu-toggle" class="text-gray-600 hover:text-blue-600">
-            <i class="fa fa-bars text-xl"></i>
-          </button>
-        </div>
-      </div>
-      
-      <!-- 移动端导航菜单 -->
-      <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
-        <a href="index.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">首页</span>
-          <span class="lang en hidden">Home</span>
-        </a>
-        <a href="about.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">企业文化</span>
-          <span class="lang en hidden">Corporate Culture</span>
-        </a>
-        <a href="products.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">产品</span>
-          <span class="lang en hidden">Products</span>
-        </a>
-        <a href="team.html" class="block py-2 text-blue-600 font-medium">
-          <span class="lang zh">团队</span>
-          <span class="lang en hidden">Team</span>
-        </a>
-        <a href="contact.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">联系我们</span>
-          <span class="lang en hidden">Contact Us</span>
-        </a>
-      </div>
-    </div>
-  </nav>
 
-  <!-- 页面标题 -->
-  <section class="pt-40 pb-16 bg-blue-50">
-    <div class="container mx-auto px-4">
-      <h1 class="text-4xl font-bold text-center">
-        <span class="lang zh">我们的团队</span>
-        <span class="lang en hidden">Our Team</span>
-      </h1>
-      <p class="text-gray-600 text-center mt-4 max-w-2xl mx-auto">
-        <span class="lang zh">京徽龙江-致欣科技拥有一支专业、创新、充满活力的团队，致力于为客户提供优质的技术解决方案</span>
-        <span class="lang en hidden">Jinghui Longjiang-Zhixin Technology has a professional, innovative and energetic team dedicated to providing customers with high-quality technical solutions</span>
-      </p>
-    </div>
-  </section>
-
-  <!-- 管理团队 -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">管理团队</span>
-          <span class="lang en hidden">Management Team</span>
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          <span class="lang zh">我们的管理团队拥有丰富的行业经验和专业知识，引领公司不断发展壮大</span>
-          <span class="lang en hidden">Our management team has rich industry experience and professional knowledge, leading the company to continuous development and growth</span>
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- 团队成员 1 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-2xl font-bold mb-2">程玉学</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">创始人 & 总经理</span>
-            <span class="lang en hidden">Founder & General Manager</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有35年半导体科技行业经验，曾任职于国内知名科技企业负责人，负责公司整体战略规划和业务发展。</span>
-            <span class="lang en hidden">With 35 years of experience in the semiconductor technology industry, he has served as a leader in well-known domestic technology companies, responsible for the company's overall strategic planning and business development.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 团队成员 2 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-2xl font-bold mb-2">孙琴</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">副总经理兼技术总监</span>
-            <span class="lang en hidden">Deputy General Manager & Technical Director</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">负责公司技术战略制定与实施，领导技术团队推动创新和技术进步。</span>
-            <span class="lang en hidden">Responsible for the formulation and implementation of the company's technical strategy, leading the technical team to promote innovation and technological progress.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 团队成员 3 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-2xl font-bold mb-2">程秋龙</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">商务总监</span>
-            <span class="lang en hidden">Deputy General Manager & Technical Director</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">负责公司商务拓展与客户关系管理，推动公司业务发展。</span>
-            <span class="lang en hidden">Responsible for company business expansion and customer relationship management, promoting business development.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- 团队成员 4 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-2xl font-bold mb-2">王伟红</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">综合部部长</span>
-            <span class="lang en hidden">Director of General Affairs Department</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有20年企业运营管理经验，负责公司日常运营、客户服务和团队管理。</span>
-            <span class="lang en hidden">With 20 years of enterprise operation management experience, responsible for the company's daily operations, customer service and team management.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 团队成员 5 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-2xl font-bold mb-2">贾笑林</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">技术部总监</span>
-            <span class="lang en hidden">Technical Department Director</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有40年软件开发经验，专注于单片机及PLC系统架构及机械架构设计和研发。</span>
-            <span class="lang en hidden">With 40 years of software development experience, focusing on single-chip microcomputer and PLC system architecture, as well as mechanical architecture design and R&D.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 生产团队 -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">生产团队</span>
-          <span class="lang en hidden">Production Team</span>
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          <span class="lang zh">我们的生产团队拥有丰富的制造经验，确保产品质量和生产效率</span>
-          <span class="lang en hidden">Our production team has rich manufacturing experience, ensuring product quality and production efficiency</span>
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- 生产团队成员 1 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">张胜飞</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">生产主任</span>
-            <span class="lang en hidden">Production Manager</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有5年生产管理经验，负责生产计划和质量控制。</span>
-            <span class="lang en hidden">With 15 years of production management experience, responsible for production planning and quality control.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 生产团队成员 2 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">刘世伟</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">生产主任</span>
-            <span class="lang en hidden">Production Manager</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有5年生产管理经验，负责生产计划和质量控制。</span>
-            <span class="lang en hidden">Responsible for product quality inspection and quality system maintenance.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 生产团队成员 3 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">程贺明</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">质检主任</span>
-            <span class="lang en hidden">Quality Control Manager</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">专注于生产工艺优化，提高生产效率和产品质量。</span>
-            <span class="lang en hidden">Focusing on production process optimization, improving production efficiency and product quality.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 生产团队成员 4 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">邢丽美</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">质检专员</span>
-            <span class="lang en hidden">Quality Control Specialist</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">负责质检体系登记。</span>
-            <span class="lang en hidden">Responsible for maintaining quality control system records.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 设计团队 -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">设计团队</span>
-          <span class="lang en hidden">Design Team</span>
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          <span class="lang zh">我们的设计团队专注于通过创新和专业的设计服务，为客户提供高质量的解决方案。</span>
-          <span class="lang en hidden">Our design team focuses on providing high-quality solutions to customers through innovative and professional design services.</span>
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- 设计团队成员 1 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">程翔</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">SOLIDWORKS 设计师</span>
-            <span class="lang en hidden">SOLIDWORKS Designer</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有20年设计经验，从事机械产品研究、开发和设计的专业设计人员，负责将概念转化为实际产品，涉及从简单工具到复杂生产线的设计工作。</span>
-            <span class="lang en hidden">With 20 years of design experience, he is a professional technical personnel engaged in mechanical product research, development and design, responsible for transforming concepts into actual products, involving design work from simple tools to complex production lines.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-behance text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        
-        <!-- 设计团队成员 3 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">席斐</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">SOLIDWORKS 设计师</span>
-            <span class="lang en hidden">SOLIDWORKS Designer</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有4年机械设计经验，专注于从事机械产品研究、开发和设计的专业设计人员。</span>
-            <span class="lang en hidden">With 4 years of mechanical design experience, focusing on professional technical personnel engaged in mechanical product research, development and design.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-behance text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 技术团队 -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">技术团队</span>
-          <span class="lang en hidden">Technical Team</span>
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          <span class="lang zh">我们的技术团队由一群热爱技术、追求创新的专业人士组成，致力于开发高质量的技术解决方案</span>
-          <span class="lang en hidden">Our technical team consists of a group of professionals who love technology and pursue innovation, dedicated to developing high-quality technical solutions</span>
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- 技术团队成员 1 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">贾笑林</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">高级软件工程师兼高级电气工程师</span>
-            <span class="lang en hidden">Senior Software Engineer & Senior Electrical Engineer</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有40年软件开发经验，专注于单片及PLC系统架构设计和开发。</span>
-            <span class="lang en hidden">With 40 years of software development experience, specializing in single-chip and PLC system architecture design and development.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-github text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-               
+    <main>
+        <!-- 团队介绍页面 -->
+        <!-- 功能：展示公司各个团队的成员信息和技术骨干 -->
+        <section id="team" class="section">
+            <div class="container">
+                <!-- 团队页面头部 -->
+                <!-- 功能：展示团队页面的标题和描述 -->
+                <div class="team-header">
+                    <h2>我们的团队</h2>
+                    <p class="team-description">京徽龙江-致欣科技拥有一支专业、创新、充满活力的团队，致力于为客户提供优质的技术解决方案</p>
+                </div>
                 
-        <!-- 技术团队成员 2 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">张立明</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">电气工程师</span>
-            <span class="lang en hidden">Electrical Engineer</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有8年PLC编程经验，专注于自动化部署、容器化和云平台管理。</span>
-            <span class="lang en hidden">With 8 years of PLC programming experience, specializing in automated deployment, containerization and cloud platform management.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-github text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
+                <!-- 管理团队 -->
+                <!-- 功能：展示公司管理团队成员信息 -->
+                <div class="management-team">
+                    <h3>管理团队</h3>
+                    <p class="management-description">我们的管理团队拥有丰富的行业经验和专业知识，引领公司不断发展壮大</p>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <h3>程玉学</h3>
+                            <p class="member-position">创始人 & 总经理</p>
+                            <p class="member-bio">拥有35年半导体科技行业经验，曾任职于国内知名科技企业负责人，负责公司整体战略规划和业务发展。</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link">in</a>
+                                <a href="#" class="social-link">✉</a>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <h3>孙琴</h3>
+                            <p class="member-position">副总经理兼技术总监</p>
+                            <p class="member-bio">负责公司技术战略制定与实施，领导技术团队推动创新和技术进步。</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link">in</a>
+                                <a href="#" class="social-link">✉</a>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <h3>程秋龙</h3>
+                            <p class="member-position">商务总监</p>
+                            <p class="member-bio">负责公司商务拓展与客户关系管理，推动公司业务发展。</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link">in</a>
+                                <a href="#" class="social-link">✉</a>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <h3>王伟红</h3>
+                            <p class="member-position">综合部部长</p>
+                            <p class="member-bio">拥有20年企业运营管理经验，负责公司日常运营、客户服务和团队管理。</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link">in</a>
+                                <a href="#" class="social-link">✉</a>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <h3>贾笑林</h3>
+                            <p class="member-position">技术部总监</p>
+                            <p class="member-bio">拥有40年软件开发经验，专注于单片机及PLC系统结构及机械架构设计和研发。</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link">in</a>
+                                <a href="#" class="social-link">✉</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 生产团队 -->
+            <!-- 功能：展示公司生产团队成员信息 -->
+            <div class="production-team">
+                <h3>生产团队</h3>
+                <p class="production-description">我们的生产团队拥有丰富的制造经验，确保产品质量和生产效率</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>张胜飞</h3>
+                        <p class="member-position">生产主任</p>
+                        <p class="member-bio">拥有5年生产管理经验，负责生产计划和质量控制。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>刘世伟</h3>
+                        <p class="member-position">生产主任</p>
+                        <p class="member-bio">拥有5年生产管理经验，负责生产计划和质量控制。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>程贺明</h3>
+                        <p class="member-position">质检主任</p>
+                        <p class="member-bio">专注于生产工艺优化，提高生产效率和产品质量。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>邢丽美</h3>
+                        <p class="member-position">质检专员</p>
+                        <p class="member-bio">负责质检体系登记。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 设计团队 -->
+            <!-- 功能：展示公司设计团队成员信息 -->
+            <div class="design-team">
+                <h3>设计团队</h3>
+                <p class="design-description">我们的设计团队专注于通过创新和专业的设计服务，为客户提供高质量的解决方案。</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>程翔</h3>
+                        <p class="member-position">SOLIDWORKS 设计师</p>
+                        <p class="member-bio">拥有20年设计经验，从事机械产品研究、开发和设计的专业设计人员，负责将概念转化为实际产品，涉及从简单工具到复杂生产线的设计工作。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">Be</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>席斐</h3>
+                        <p class="member-position">SOLIDWORKS 设计师</p>
+                        <p class="member-bio">拥有4年机械设计经验，专注于从事机械产品研究、开发和设计的专业设计人员。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">Be</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 技术团队 -->
+            <!-- 功能：展示公司技术团队成员信息 -->
+            <div class="tech-team">
+                <h3>技术团队</h3>
+                <p class="tech-description">我们的技术团队由一群热爱技术、追求创新的专业人士组成，致力于开发高质量的技术解决方案</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>贾笑林</h3>
+                        <p class="member-position">高级软件工程师兼高级电气工程师</p>
+                        <p class="member-bio">拥有40年软件开发经验，专注于单片机及PLC系统架构设计和开发。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>张立明</h3>
+                        <p class="member-position">电气工程师</p>
+                        <p class="member-bio">拥有8年PLC编程经验，专注于自动化部署。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 商务团队 -->
+            <!-- 功能：展示公司商务团队成员信息 -->
+            <div class="business-team">
+                <h3>商务团队</h3>
+                <p class="business-description">我们的商务团队专注于市场拓展和客户关系管理，推动公司业务持续增长。</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>朱琳</h3>
+                        <p class="member-position">商务专员</p>
+                        <p class="member-bio">拥有8年商务经验，专注于大客户关系维护，提供专业的客户服务。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>李琼</h3>
+                        <p class="member-position">商务专员</p>
+                        <p class="member-bio">负责市场调研和品牌推广，提升公司市场影响力。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 库房团队 -->
+            <!-- 功能：展示公司库房团队成员信息 -->
+            <div class="warehouse-team">
+                <h3>库房团队</h3>
+                <p class="warehouse-description">我们的库房团队负责物料管理和库存控制，确保供应链高效运作</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>梁亚楠</h3>
+                        <p class="member-position">库房专员</p>
+                        <p class="member-bio">拥有5年仓库管理经验，负责库存管理和物流协调。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>金建功</h3>
+                        <p class="member-position">库房专员</p>
+                        <p class="member-bio">负责仓库日常管理和登记物料分类存储及员工打卡请假统计。</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">✉</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 技术骨干 -->
+            <!-- 功能：展示公司技术骨干成员信息，使用滚动效果 -->
+            <div class="tech-backbone">
+                <div class="tech-backbone-header">
+                    <h3>技术骨干</h3>
+                    <p class="tech-backbone-description">我们的团队成员各具专长，共同为公司的发展贡献力量。</p>
+                </div>
+                <div class="tech-backbone-scroll">
+                    <div class="tech-backbone-grid-container">
+                        <div class="tech-backbone-grid">
+                            <div class="tech-backbone-item">
+                                <h4>孙保俊</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有10年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>唐学磊</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有10年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>张啊诚</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有4年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>程掌权</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有6年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>郭鹏</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有8年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>陈</h4>
+                                <p class="tech-backbone-position">雕刻技术工程师</p>
+                                <p class="tech-backbone-bio">拥有5年雕刻技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>程</h4>
+                                <p class="tech-backbone-position">雕刻技术工程师</p>
+                                <p class="tech-backbone-bio">拥有8年雕刻技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>邢丽娜</h4>
+                                <p class="tech-backbone-position">焊接助理工程师</p>
+                                <p class="tech-backbone-bio">拥有3年焊接助理经验</p>
+                            </div>
+                        </div>
+                        <!-- 复制一份内容，使滚动效果无缝衔接 -->
+                        <div class="tech-backbone-grid">
+                            <div class="tech-backbone-item">
+                                <h4>孙保俊</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有10年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>唐学磊</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有10年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>张啊诚</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有4年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>程掌权</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有6年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>郭鹏</h4>
+                                <p class="tech-backbone-position">焊接技术工程师</p>
+                                <p class="tech-backbone-bio">拥有8年焊接技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>陈</h4>
+                                <p class="tech-backbone-position">雕刻技术工程师</p>
+                                <p class="tech-backbone-bio">拥有5年雕刻技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>程</h4>
+                                <p class="tech-backbone-position">雕刻技术工程师</p>
+                                <p class="tech-backbone-bio">拥有8年雕刻技术经验</p>
+                            </div>
+                            <div class="tech-backbone-item">
+                                <h4>邢丽娜</h4>
+                                <p class="tech-backbone-position">焊接助理工程师</p>
+                                <p class="tech-backbone-bio">拥有3年焊接助理经验</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 公司联系信息 -->
+    <!-- 功能：展示公司详细信息和联系方式 -->
+    <div class="company-contact">
+        <div class="container">
+            <!-- 左侧公司介绍 -->
+            <div class="contact-info-left">
+                <h3>北京市京徽龙江科技有限公司</h3>
+                <p>作为一个新型的高新技术企业,公司始终坚持"团结拼搏、自我加压、争创一流"的企业精神,坚持"质量第一、信誉至上、行胜于言、打造满意服务"的经营理念,使公司上下形成团结一致,拼搏奋进的良好工作氛围,增强企业的凝聚力和向心力。</p>
+                <p>我们坚信"质量出效益,服务树形象"。质量方针：强化质量管理,持续提升产品质量，坚持优质服务,不断满足用户需求。</p>
+                <p>我们本着以诚信为前提、质量为保证、顾客满意为焦点的经营宗旨,愿与国内外朋友真诚合作，共创工业科技行业的明天!</p>
+            </div>
+            
+            <!-- 右侧联系信息 -->
+            <div class="contact-info-right">
+                <h3>联系我们</h3>
+                <p><strong>总部地址：</strong>北京市通州区宋庄镇喇嘛庄村北东马地</p>
+                <p><strong>生产基地：</strong>河北省三河市燕郊经济技术开发区燕昌204号路</p>
+                <p><strong>总经理：</strong>13377619173</p>
+                <p><strong>销售：</strong>18733329660</p>
+                <p><strong>销售：</strong>18510133991</p>
+                <p><strong>邮箱：</strong>80725764@qq.com</p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- 商务团队 -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">商务团队</span>
-          <span class="lang en hidden">Business Team</span>
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-            <span class="lang zh">我们的商务团队专注于市场拓展和客户关系管理，推动公司业务持续增长。</span>
-          <span class="lang en hidden">Our business team focuses on market expansion and customer relationship management, driving continuous business growth</span>
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- 商务团队成员 1 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">朱琳</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">商务专员</span>
-            <span class="lang en hidden">Sales Manager</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有8年商务经验，专注于大客户关系维护，提供专业的客户服务。</span>
-            <span class="lang en hidden">With 8 years of sales experience, focusing on semiconductor equipment sales and market expansion.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
+    <!-- 页脚 -->
+    <!-- 功能：显示版权信息 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2006-2026 北京市京徽龙江科技有限公司 版权所有</p>
         </div>
-        
-        <!-- 商务团队成员 2 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">李琼</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">商务专员</span>
-            <span class="lang en hidden">Marketing Specialist</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">负责市场调研和品牌推广，提升公司市场影响力。</span>
-            <span class="lang en hidden">Responsible for market research and brand promotion, enhancing company's market influence.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- 库房团队 -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">库房团队</span>
-          <span class="lang en hidden">Warehouse Team</span>
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          <span class="lang zh">我们的库房团队负责物料管理和库存控制，确保供应链高效运作</span>
-          <span class="lang en hidden">Our warehouse team is responsible for material management and inventory control, ensuring efficient supply chain operations</span>
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- 库房团队成员 1 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">梁亚楠</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">库房专员</span>
-            <span class="lang en hidden">Warehouse Manager</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">拥有5年仓库管理经验，负责库存管理和物流协调。</span>
-            <span class="lang en hidden">With 5 years of warehouse management experience, responsible for inventory management and logistics coordination.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-        <!-- 库房团队成员 4 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow p-6 text-center">
-          <h3 class="text-xl font-bold mb-2">金建功</h3>
-          <p class="text-blue-600 font-medium mb-4">
-            <span class="lang zh">库房专员</span>
-            <span class="lang en hidden">Warehouse Administrator</span>
-          </p>
-          <p class="text-gray-600 mb-6">
-            <span class="lang zh">负责仓库日常管理和物料分类存储。</span>
-            <span class="lang en hidden">Responsible for daily warehouse management and material classification storage.</span>
-          </p>
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <i class="fa fa-envelope text-xl"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 技术骨干 -->
-  <section class="py-20 bg-blue-600 text-white overflow-hidden">
-    <div class="container mx-auto px-4">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">技术骨干</span>
-          <span class="lang en hidden">Technical Backbone</span>
-        </h2>
-        <p class="text-blue-100">
-          <span class="lang zh">我们的团队成员各具专长，共同为公司的发展贡献力量。</span>
-          <span class="lang en hidden">Our team members have their own expertise and work together to contribute to the company's development.</span>
-        </p>
-      </div>
-      
-      <!-- 团队成员横向滚动 -->
-      <div class="flex space-x-6 animate-scroll-left">
-        <!-- 团队成员卡片 -->
-        <div class="bg-white text-blue-600 rounded-lg p-6 min-w-[250px]">
-          <h3 class="text-xl font-bold mb-2">孙保俊</h3>
-          <p class="font-medium mb-4">焊接技术工程师</p>
-          <p class="text-gray-600">拥有10年焊接技术经验</p>
-        </div>
-        <div class="bg-white text-blue-600 rounded-lg p-6 min-w-[250px]">
-          <h3 class="text-xl font-bold mb-2">唐学磊</h3>
-          <p class="font-medium mb-4">焊接技术工程师</p>
-          <p class="text-gray-600">拥有10年焊接技术经验</p>
-        </div>
-        <div class="bg-white text-blue-600 rounded-lg p-6 min-w-[250px]">
-          <h3 class="text-xl font-bold mb-2">张啊诚</h3>
-          <p class="font-medium mb-4">焊接技术工程师</p>
-          <p class="text-gray-600">拥有4年焊接技术经验</p>
-        </div>
-        <div class="bg-white text-blue-600 rounded-lg p-6 min-w-[250px]">
-          <h3 class="text-xl font-bold mb-2">程掌权</h3>
-          <p class="font-medium mb-4">焊接技术工程师</p>
-          <p class="text-gray-600">拥有6年焊接技术经验</p>
-        </div>
-        <div class="bg-white text-blue-600 rounded-lg p-6 min-w-[250px]">
-          <h3 class="text-xl font-bold mb-2">郭鹏</h3>
-          <p class="font-medium mb-4">焊接技术工程师</p>
-          <p class="text-gray-600">拥有8年焊接技术经验</p>
-        </div>
-        <div class="bg-white text-blue-600 rounded-lg p-6 min-w-[250px]">
-          <h3 class="text-xl font-bold mb-2">陈</h3>
-          <p class="font-medium mb-4">雕刻技术工程师</p>
-          <p class="text-gray-600">拥有5年雕刻技术经验</p>
-        </div>
-        <div class="bg-white text-blue-600 rounded-lg p-6 min-w-[250px]">
-          <h3 class="text-xl font-bold mb-2">程</h3>
-          <p class="font-medium mb-4">雕刻技术工程师</p>
-          <p class="text-gray-600">拥有8年雕刻技术经验</p>
-        </div>
-        <div class="bg-white text-blue-600 rounded-lg p-6 min-w-[250px]">
-          <h3 class="text-xl font-bold mb-2">邢丽娜</h3>
-          <p class="font-medium mb-4">焊接助理工程师</p>
-          <p class="text-gray-600">拥有3年焊接助理经验</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- 滚动动画样式 -->
-  <style>
-    @keyframes scrollLeft {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-    
-    .animate-scroll-left {
-      animation: scrollLeft 30s linear infinite;
-    }
-    
-    .animate-scroll-left:hover {
-      animation-play-state: paused;
-    }
-  </style>
-
-  <!-- 页脚 -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- 公司信息 -->
-        <div>
-          <h3 class="text-xl font-bold mb-4">
-            <span class="lang zh">北京市京徽龙江科技有限公司</span>
-            <span class="lang en hidden">Beijing Jinghui Longjiang Technology Co., Ltd.</span>
-          </h3>
-          <p class="text-gray-400 mb-4">
-            <span class="lang zh">作为一个新型的高新技术企业,公司始终坚持“团结拼搏、自我加压、争创一流”的企业精神,坚持“质量第一、信誉至上、行胜于言、打造满意服务”的经营理念,使公司上下形成团结一致,拼搏奋进的良好工作氛围,增强企业的凝聚力和向心力。</span>
-            <span class="lang en hidden">As a new high-tech enterprise, the company always adheres to the enterprise spirit of "unity and hard work, self-pressure, and striving for first-class", and adheres to the business philosophy of "quality first, reputation first, action speaks louder than words, and creating satisfactory service", so that the company has formed a good working atmosphere of unity and hard work, enhancing the cohesion and centripetal force of the enterprise.</span>
-          </p>
-          <p class="text-gray-400 mb-4">
-            <span class="lang zh">我们坚信“质量出效益,服务树形象”。质量方针∶强化质量管理,持续提升产品质量，坚持优质服务,不断满足用户需求。</span>
-            <span class="lang en hidden">We firmly believe that "quality brings benefits, service builds image". Quality policy: strengthen quality management, continuously improve product quality, adhere to high-quality service, and constantly meet user needs.</span>
-          </p>
-          <p class="text-gray-400 mb-4">
-            <span class="lang zh">我们本着以诚信为前提、质量为保证、顾客满意为焦点的经营宗旨,愿与国内外朋友真诚合作，共创工业科技行业的明天！</span>
-            <span class="lang en hidden">Based on the business purpose of taking integrity as the premise, quality as the guarantee, and customer satisfaction as the focus, we are willing to sincerely cooperate with friends at home and abroad to create the future of the industrial technology industry!</span>
-          </p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-              <i class="fa fa-weixin text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 联系信息 -->
-        <div>
-          <h3 class="text-lg font-bold mb-4">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact Us</span>
-          </h3>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">总部地址：北京市通州区宋庄镇喇嘛庄村北东马地</span>
-                <span class="lang en hidden">Headquarters Address: North East Madi, Lama Village, Songzhuang Town, Tongzhou District, Beijing</span>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">生产基地：河北省三河市燕郊经济技术开发区燕昌204号路</span>
-                <span class="lang en hidden">Production Base: Yanchang Road 204, Yanjiao Economic and Technological Development Zone, Sanhe City, Hebei Province</span>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">总经理：13377619173</span>
-                <span class="lang en hidden">General Manager：13377619173</span>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">销售：18733329660</span>
-                <span class="lang en hidden">Sales：18733329660</span>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">销售：18510133991</span>
-                <span class="lang en hidden">Sales：18510133991</span>
-              </span>
-            </li>
-            <li class="flex items-center">
-              <i class="fa fa-envelope text-gray-400 mr-3"></i>
-              <span class="text-gray-400">80725764@qq.com</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-        <p>
-          <span class="lang zh">&copy; 2026 北京市京徽龙江科技有限公司. 保留所有权利.</span>
-          <span class="lang en hidden">&copy; 2026 Beijing Jinghui Longjiang Technology Co., Ltd. All rights reserved.</span>
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script>
-    // 移动端菜单切换（存在元素时才绑定）
-    (function () {
-      const menuToggle = document.getElementById('menu-toggle');
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', function() {
-          mobileMenu.classList.toggle('hidden');
-        });
-      }
-    })();
-    
-    // 动态调整页面内容上边距，确保不被导航栏覆盖
-    function adjustContentPadding() {
-      const nav = document.querySelector('nav');
-      const mainContent = document.querySelector('section');
-      if (nav && mainContent) {
-        const navHeight = nav.offsetHeight;
-        mainContent.style.paddingTop = `${navHeight + 20}px`;
-      }
-    }
-    
-    // 中英文切换功能
-    document.addEventListener('DOMContentLoaded', function() {
-      // 调整内容上边距
-      adjustContentPadding();
-      
-      // 窗口大小改变时重新调整
-      window.addEventListener('resize', adjustContentPadding);
-      
-      // 获取语言切换按钮
-      const langButtons = document.querySelectorAll('header button[data-lang]');
-      
-      // 添加点击事件监听器
-      langButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          const selectedLang = this.getAttribute('data-lang');
-          
-          // 移除所有按钮的活动状态
-          langButtons.forEach(btn => {
-            btn.classList.remove('bg-white', 'text-blue-600');
-            btn.classList.add('bg-transparent', 'border', 'border-white');
-          });
-          
-          // 添加当前按钮的活动状态
-          this.classList.remove('bg-transparent', 'border', 'border-white');
-          this.classList.add('bg-white', 'text-blue-600');
-          
-          // 切换显示语言内容
-          document.querySelectorAll('.lang').forEach(element => {
-            element.classList.add('hidden');
-          });
-          document.querySelectorAll(`.lang.${selectedLang}`).forEach(element => {
-            element.classList.remove('hidden');
-          });
-          
-          // 语言切换后重新调整内容上边距
-          adjustContentPadding();
-        });
-      });
-    });
-  </script>
-
-  <!-- 在线咨询小窗口 -->
-  <div id="online-consult" class="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
-    <div class="relative">
-      <button id="consult-toggle" class="bg-blue-600 text-white px-4 py-3 rounded-l-lg shadow-lg hover:bg-blue-700 transition-colors flex items-center">
-        <i class="fa fa-comments text-xl mr-2"></i>
-        <span class="lang zh">在线咨询</span>
-        <span class="lang en hidden">Online Consult</span>
-      </button>
-      <div id="consult-content" class="hidden absolute right-14 top-0 bg-white rounded-lg shadow-xl p-4 w-64">
-        <div class="text-center">
-          <h3 class="text-lg font-bold mb-3 text-gray-800">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact Us</span>
-          </h3>
-          <div class="mb-4">
-            <img src="/src/images/wechat-qr.png" alt="微信二维码" class="w-40 h-40 mx-auto object-contain border border-gray-200 rounded" loading="lazy" decoding="async">
-          </div>
-          <p class="text-sm text-gray-600 mb-2">
-            <span class="lang zh">扫描二维码</span>
-            <span class="lang en hidden">Scan QR Code</span>
-          </p>
-          <p class="text-sm text-gray-600 mb-3">
-            <span class="lang zh">添加微信详细了解</span>
-            <span class="lang en hidden">Add WeChat for details</span>
-          </p>
-          <div class="border-t pt-3 mt-3">
-            <p class="text-sm text-gray-600 mb-1">
-              <span class="lang zh">电话咨询</span>
-              <span class="lang en hidden">Phone Consult</span>
-            </p>
-            <p class="text-sm font-bold text-blue-600">13377619173</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById('consult-toggle').addEventListener('click', function() {
-      const content = document.getElementById('consult-content');
-      content.classList.toggle('hidden');
-    });
-  </script>
+    <!-- 外部JavaScript引入 -->
+    <!-- 功能：实现导航栏菜单切换和新闻动态分页功能 -->
+    <script src="script.js"></script>
 </body>
 </html>

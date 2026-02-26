@@ -1,815 +1,97 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>京徽龙江-致欣科技 - 创新解决方案提供商</title>
-
-  <meta name="description" content="京徽龙江-致欣科技是一家专注于提供清洗设备和技术解决方案的公司，致力于帮助企业提升生产效率和产品质量。">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/src/css/style.css">
+    <!-- 文档类型声明 -->
+    <meta charset="UTF-8"> <!-- 字符编码设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计设置 -->
+    <title>北京市京徽龙江科技有限公司</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 外部样式表引入 -->
 </head>
-<body class="font-sans text-gray-800">
-  <!-- 顶部页眉 -->
-  <header class="bg-blue-600 text-white py-2 fixed w-full z-50">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center">
-        <!-- 电话信息 -->
-        <div class="flex items-center space-x-6">
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">总经理：13377619173</span>
-            <span class="lang en hidden">General Manager：13377619173</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">销售：18733329660</span>
-            <span class="lang en hidden">Sales：18733329660</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-phone mr-2"></i>
-            <span class="lang zh">销售：18510133991</span>
-            <span class="lang en hidden">Sales：18510133991</span>
-          </div>
+<body>
+    <!-- 导航栏 -->
+    <!-- 功能：提供网站主要页面的导航链接，支持移动端响应式菜单 -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- 公司logo -->
+            <div class="logo">
+                <img src="img/logo.png" alt="北京市京徽龙江科技有限公司LOGO" class="logo-img">
+                <h1>北京市京徽龙江科技有限公司</h1>
+            </div>
+            
+            <!-- 导航链接 -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">首页</a></li>
+                <li><a href="culture.html" class="nav-link">企业文化</a></li>
+                <li><a href="team.html" class="nav-link">团队介绍</a></li>
+                <li><a href="products.html" class="nav-link">产品中心</a></li>
+                <li><a href="news.html" class="nav-link">新闻动态</a></li>
+                <li><a href="contact.html" class="nav-link">联系我们</a></li>
+            </ul>
+            
+            <!-- 移动端菜单按钮 -->
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-        
-        <!-- 中英文切换 -->
-        <div class="flex items-center space-x-4">
-          <button class="px-3 py-1 bg-white text-blue-600 rounded hover:bg-blue-50 transition-colors" data-lang="zh">中文</button>
-          <button class="px-3 py-1 bg-transparent border border-white rounded hover:bg-white hover:text-blue-600 transition-colors" data-lang="en">English</button>
+    </nav>
+
+    <!-- 通知栏 -->
+    <!-- 功能：显示网站欢迎信息或重要通知 -->
+    <div class="notification-bar">
+        <div class="container">
+            <p>欢迎访问北京市京徽龙江科技有限公司官网！我们致力于为您提供高品质的科技解决方案。</p>
         </div>
-      </div>
     </div>
-  </header>
 
-  <!-- 导航栏 -->
-  <nav class="bg-white shadow-md fixed w-full z-40 pt-16">
-    <div class="max-w-7xl mx-auto px-4 py-8">
-      <div class="flex justify-between items-center">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center">
-          <!-- 自定义LOGO图片 -->
-          <img src="/src/images/logo.png" alt="北京市京徽龙江科技有限公司" class="h-20 mr-4" decoding="async">
-          <!-- LOGO文字 -->
-          <span class="text-3xl font-bold text-blue-600 lang zh">北京市京徽龙江科技有限公司</span>
-          <span class="text-3xl font-bold text-blue-600 lang en hidden">Beijing Jinghui Longjiang Technology Co., Ltd.</span>
-        </a>
-        
-        <!-- 桌面导航 -->
-        <div class="hidden md:flex space-x-10 ml-[151px]">
-          <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors py-3">
-            <span class="lang zh">首页</span>
-            <span class="lang en hidden">Home</span>
-          </a>
-          <a href="about.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">企业文化</span>
-            <span class="lang en hidden">Culture</span>
-          </a>
-          <a href="products.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">产品</span>
-            <span class="lang en hidden">Products</span>
-          </a>
-          <a href="team.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">团队</span>
-            <span class="lang en hidden">Team</span>
-          </a>
-          <a href="contact.html" class="text-2xl font-bold hover:text-blue-600 transition-colors py-3">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact</span>
-          </a>
+    <main>
+        <!-- 首页 -->
+        <!-- 功能：展示公司核心价值主张和品牌形象 -->
+        <section class="hero">
+            <div class="container">
+                <h2>创新科技 引领未来</h2> <!-- 公司口号 -->
+                <p>北京市京徽龙江科技有限公司致力于提供高品质的科技解决方案，为企业数字化转型赋能。</p> <!-- 公司简介 -->
+               
+            </div>
+        </section>
+    </main>
+
+    <!-- 公司联系信息 -->
+    <!-- 功能：展示公司详细信息和联系方式 -->
+    <div class="company-contact">
+        <div class="container">
+            <!-- 左侧公司介绍 -->
+            <div class="contact-info-left">
+                <h3>北京市京徽龙江科技有限公司</h3>
+                <p>作为一个新型的高新技术企业,公司始终坚持"团结拼搏、自我加压、争创一流"的企业精神,坚持"质量第一、信誉至上、行胜于言、打造满意服务"的经营理念,使公司上下形成团结一致,拼搏奋进的良好工作氛围,增强企业的凝聚力和向心力。</p>
+                <p>我们坚信"质量出效益,服务树形象"。质量方针：强化质量管理,持续提升产品质量，坚持优质服务,不断满足用户需求。</p>
+                <p>我们本着以诚信为前提、质量为保证、顾客满意为焦点的经营宗旨,愿与国内外朋友真诚合作，共创工业科技行业的明天!</p>
+            </div>
+            
+            <!-- 右侧联系信息 -->
+            <div class="contact-info-right">
+                <h3>联系我们</h3>
+                <p><strong>总部地址：</strong>北京市通州区宋庄镇喇嘛庄村北东马地</p>
+                <p><strong>生产基地：</strong>河北省三河市燕郊经济技术开发区燕昌204号路</p>
+                <p><strong>总经理：</strong>13377619173</p>
+                <p><strong>销售：</strong>18733329660</p>
+                <p><strong>销售：</strong>18510133991</p>
+                <p><strong>邮箱：</strong>80725764@qq.com</p>
+            </div>
         </div>
-        
-        <!-- 移动端菜单按钮 -->
-        <div class="md:hidden">
-          <button id="menu-toggle" class="text-gray-600 hover:text-blue-600">
-            <i class="fa fa-bars text-xl"></i>
-          </button>
+    </div>
+
+    <!-- 页脚 -->
+    <!-- 功能：显示版权信息 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2006-2026 北京市京徽龙江科技有限公司 版权所有</p>
         </div>
-      </div>
-      
-      <!-- 移动端导航菜单 -->
-      <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
-        <a href="index.html" class="block py-2 text-blue-600 font-medium">
-          <span class="lang zh">首页</span>
-          <span class="lang en hidden">Home</span>
-        </a>
-        <a href="about.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">企业文化</span>
-          <span class="lang en hidden">Culture</span>
-        </a>
-        <a href="products.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">产品</span>
-          <span class="lang en hidden">Products</span>
-        </a>
-        <a href="team.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">团队</span>
-          <span class="lang en hidden">Team</span>
-        </a>
-        <a href="contact.html" class="block py-2 hover:text-blue-600">
-          <span class="lang zh">联系我们</span>
-          <span class="lang en hidden">Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
+    </footer>
 
-  <!-- 英雄区 -->
-  <section class="pt-40">
-    <!-- 自定义图片区域 -->
-    <div class="w-full">
-      <img src="/src/images/company-logo.jpg" alt="公司标识" class="w-full h-auto object-cover" decoding="async">
-    </div>
-  </section>
-
-  <!-- 服务介绍 -->
-  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
-    <!-- 背景装饰 -->
-    <div class="absolute inset-0 opacity-10">
-      <img src="/src/images/services/cloud.jpg" alt="背景" class="w-full h-full object-cover" loading="lazy" decoding="async" aria-hidden="true">
-    </div>
-    
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">我们的服务</span>
-          <span class="lang en hidden">Our Services</span>
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          <span class="lang zh">我们提供全方位的技术解决方案，满足企业在数字化转型过程中的各种需求。</span>
-          <span class="lang en hidden">We provide comprehensive technology solutions to meet the various needs of enterprises in the process of digital transformation.</span>
-        </p>
-      </div>
-      
-      <!-- 六边形布局 -->
-      <div class="hexagon-grid max-w-5xl mx-auto">
-        <!-- 第一行 -->
-        <div class="flex justify-center space-x-8 mb-8">
-          <!-- 服务 1 -->
-          <div class="hexagon-item">
-            <div class="hexagon">
-              <img src="/src/images/services/cloud.jpg" alt="箱体" class="w-full h-full object-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="mt-4 text-center">
-              <h3 class="text-xl font-bold mb-2">
-                <span class="lang zh">箱体</span>
-                <span class="lang en hidden">Box Solutions</span>
-              </h3>
-              <p class="text-gray-600 text-sm">
-                <span class="lang zh">提供灵活、可扩展的箱体解决方案，帮助企业降低箱体成本，提高控本效率。</span>
-                <span class="lang en hidden">Provide flexible and scalable box solutions to help enterprises reduce box costs and improve cost control efficiency.</span>
-              </p>
-            </div>
-          </div>
-          
-          <!-- 服务 2 -->
-          <div class="hexagon-item">
-            <div class="hexagon">
-              <img src="/src/images/services/mobile.jpg" alt="移动应用开发" class="w-full h-full object-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="mt-4 text-center">
-              <h3 class="text-xl font-bold mb-2">
-                <span class="lang zh">棒材</span>
-                <span class="lang en hidden">Mobile App Development</span>
-              </h3>
-              <p class="text-gray-600 text-sm">
-                <span class="lang zh">为企业定制可控制材料成本约5%~10%。</span>
-                <span class="lang en hidden">Customize high-quality mobile applications for enterprises to enhance brand image and customer interaction.</span>
-              </p>
-            </div>
-          </div>
-          
-          <!-- 服务 3 -->
-          <div class="hexagon-item">
-            <div class="hexagon">
-              <img src="/src/images/services/security.jpg" alt="网络安全" class="w-full h-full object-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="mt-4 text-center">
-              <h3 class="text-xl font-bold mb-2">
-                <span class="lang zh">新美乐板材</span>
-                <span class="lang en hidden">Network Security</span>
-              </h3>
-              <p class="text-gray-600 text-sm">
-                <span class="lang zh">提供德国新美乐板材，德国劳士领</span>
-                <span class="lang en hidden">Provide comprehensive network security solutions to protect enterprise data and systems from network threats.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 第二行 -->
-        <div class="flex justify-center space-x-8">
-          <!-- 服务 4 -->
-          <div class="hexagon-item">
-            <div class="hexagon">
-              <img src="/src/images/services/data.jpg" alt="数据分析" class="w-full h-full object-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="mt-4 text-center">
-              <h3 class="text-xl font-bold mb-2">
-                <span class="lang zh">有机玻璃板材</span>
-                <span class="lang en hidden">Data Analysis</span>
-              </h3>
-              <p class="text-gray-600 text-sm">
-                <span class="lang zh">国产PVC、UPVC、PP、PE等板材，常备库存10余种；</span>
-                <span class="lang en hidden">Utilize big data technology to help enterprises mine data value and make more informed business decisions.</span>
-              </p>
-            </div>
-          </div>
-          
-          <!-- 服务 5 -->
-          <div class="hexagon-item">
-            <div class="hexagon">
-              <img src="/src/images/services/web.jpg" alt="网站开发" class="w-full h-full object-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="mt-4 text-center">
-              <h3 class="text-xl font-bold mb-2">
-                <span class="lang zh">常用板材</span>
-                <span class="lang en hidden">Website Development</span>
-              </h3>
-              <p class="text-gray-600 text-sm">
-                <span class="lang zh">进口PVC、PVDF、PP、CPVC等板材，如德国新美乐、德国劳仕
-领、日本三菱等，常备库存50余种。</span>
-                <span class="lang en hidden">Create professional and responsive websites for enterprises to enhance brand online image and attract more customers.</span>
-              </p>
-            </div>
-          </div>
-          
-          <!-- 服务 6 -->
-          <div class="hexagon-item">
-            <div class="hexagon">
-              <img src="/src/images/services/consulting.jpg" alt="IT咨询" class="w-full h-full object-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="mt-4 text-center">
-              <h3 class="text-xl font-bold mb-2">
-                <span class="lang zh">碳钢骨架包筋</span>
-                <span class="lang en hidden">IT Consulting</span>
-              </h3>
-              <p class="text-gray-600 text-sm">
-                <span class="lang zh">骨架焊接对角精度可控制在±2mm内，平面度可控制在±0.5内架构。</span>
-                <span class="lang en hidden">Provide professional IT consulting services to help enterprises formulate digital strategies and optimize IT architecture.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- 六边形布局样式 -->
-  <style>
-    .hexagon-grid {
-      position: relative;
-    }
-    
-    .hexagon-item {
-      width: 300px;
-      transition: transform 0.3s ease;
-    }
-    
-    .hexagon-item:hover {
-      transform: translateY(-10px);
-    }
-    
-    .hexagon {
-      width: 300px;
-      height: 346px;
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      overflow: hidden;
-      background: white;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease;
-    }
-    
-    .hexagon:hover {
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    }
-    
-    .hexagon img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-    
-    .hexagon:hover img {
-      transform: scale(1.05);
-    }
-    
-    @media (max-width: 1024px) {
-      .hexagon-item {
-        width: 250px;
-      }
-
-      .hexagon {
-        width: 250px;
-        height: 288px;
-      }
-
-      .flex.justify-center.space-x-8 {
-        space-x: 4;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .hexagon-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .flex.justify-center.space-x-8 {
-        flex-direction: column;
-        align-items: center;
-        space-x: 0;
-        space-y: 8;
-      }
-
-      .hexagon-item {
-        width: 280px;
-      }
-
-      .hexagon {
-        width: 280px;
-        height: 321px;
-      }
-    }
-  </style>
-
-
-
-  <!-- 资质荣誉 -->
-  <section class="py-20 bg-blue-600 text-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">
-          <span class="lang zh">资质荣誉</span>
-          <span class="lang en hidden">Qualifications & Honors</span>
-        </h2>
-        <p class="text-blue-100 max-w-2xl mx-auto">
-          <span class="lang zh">京徽龙江-致欣科技凭借专业的技术实力和优质的服务，获得了多项行业资质和荣誉认证。</span>
-          <span class="lang en hidden">Relying on professional technical strength and high-quality services, Jinghui Longjiang-Zhixin Technology has obtained multiple industry qualifications and honorary certifications.</span>
-        </p>
-      </div>
-      
-      <!-- 荣誉资质横向滚动 -->
-      <div class="relative">
-        <!-- 左右划转按钮 -->
-        <button id="cert-scroll-left" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-blue-600 w-12 h-12 rounded-full flex items-center justify-center shadow-lg z-10 hover:bg-blue-50 transition-colors">
-          <i class="fa fa-chevron-left"></i>
-        </button>
-        <button id="cert-scroll-right" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-blue-600 w-12 h-12 rounded-full flex items-center justify-center shadow-lg z-10 hover:bg-blue-50 transition-colors">
-          <i class="fa fa-chevron-right"></i>
-        </button>
-        
-        <!-- 横向滚动容器 -->
-        <div id="cert-container" class="overflow-x-auto pb-8 -mx-4 px-4">
-          <div class="flex space-x-6 min-w-max" id="cert-slider">
-            <!-- 荣誉资质 1 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-1.jpg" alt="荣誉资质 1" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质荣誉</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 2 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-2.jpg" alt="荣誉资质 2" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质荣誉</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 3 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-3.jpg" alt="荣誉资质 3" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质荣誉</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 4 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-4.jpg" alt="荣誉资质 4" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质荣誉</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 5 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-5.jpg" alt="荣誉资质 5" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质荣誉</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 6 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-6.jpg" alt="荣誉资质 6" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质荣誉</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 7 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-7.jpg" alt="荣誉资质 7" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质荣誉</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 8 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-8.jpg" alt="荣誉资质 8" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">专利证书</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 9 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-9.jpg" alt="荣誉资质 9" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质荣誉</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 10 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-10.jpg" alt="荣誉资质 10" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">专利证书</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 11 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-11.jpg" alt="荣誉资质 11" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">专利证书</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 12 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-12.jpg" alt="荣誉资质 12" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">专利证书</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 13 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-13.jpg" alt="荣誉资质 13" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">专利证书</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 14 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-14.jpg" alt="荣誉资质 14" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">专利证书</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 15 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-15.jpg" alt="荣誉资质 15" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">专利证书</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 16 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-16.jpg" alt="荣誉资质 16" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">战略伙伴</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 17 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-17.jpg" alt="荣誉资质 17" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">战略伙伴</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 18 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-18.jpg" alt="荣誉资质 18" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质证书 18</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 19 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-19.jpg" alt="荣誉资质 19" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-              <div class="p-4 text-gray-800">
-                <p class="text-sm font-medium text-center">资质证书 19</p>
-              </div>
-            </div>
-            
-            <!-- 荣誉资质 20 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow flex-shrink-0 w-64">
-              <div class="overflow-hidden">
-                <img src="/src/images/certifications/cert-20.jpg" alt="荣誉资质 20" class="w-full h-auto object-contain" loading="lazy" decoding="async">
-              </div>
-      <div class="p-4 text-gray-800">
-        <p class="text-sm font-medium text-center">资质证书 20</p>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 页脚 -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- 公司信息 -->
-        <div>
-          <h3 class="text-xl font-bold mb-4">北京市京徽龙江科技有限公司</h3>
-          <p class="text-gray-400 mb-4">
-            <span class="lang zh">作为一个新型的高新技术企业,公司始终坚持"团结拼搏、自我加压、争创一流"的企业精神,坚持"质量第一、信誉至上、行胜于言、打造满意服务"的经营理念,使公司上下形成团结一致,拼搏奋进的良好工作氛围,增强企业的凝聚力和向心力。</span>
-            <span class="lang en hidden">As a new high-tech enterprise, the company always adheres to the enterprise spirit of "unity and struggle, self-pressure, striving for first-class", and adheres to the business philosophy of "quality first, reputation first, action speaks louder than words, creating satisfactory services", so that the company forms a good working atmosphere of unity, struggle and progress, and enhances the cohesion and centripetal force of the enterprise.</span>
-          </p>
-          <p class="text-gray-400 mb-4">
-            <span class="lang zh">我们坚信"质量出效益,服务树形象"。质量方针∶强化质量管理,持续提升产品质量，坚持优质服务,不断满足用户需求。</span>
-            <span class="lang en hidden">We firmly believe that "quality produces benefits, service builds image". Quality policy: strengthen quality management, continuously improve product quality, adhere to high-quality services, and constantly meet user needs.</span>
-          </p>
-          <p class="text-gray-400 mb-4">
-            <span class="lang zh">我们本着以诚信为前提、质量为保证、顾客满意为焦点的经营宗旨,愿与国内外朋友真诚合作，共创工业科技行业的明天！</span>
-            <span class="lang en hidden">We are based on the business purpose of integrity as the premise, quality as the guarantee, and customer satisfaction as the focus. We are willing to sincerely cooperate with friends at home and abroad to create the future of the industrial technology industry!</span>
-          </p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-              <i class="fa fa-weixin text-xl"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- 联系信息 -->
-        <div>
-          <h3 class="text-lg font-bold mb-4">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact Us</span>
-          </h3>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">总部地址：北京市通州区宋庄镇喇嘛庄村北东马地</span>
-                <span class="lang en hidden">Headquarters Address: North Dongmadi, Lamazhuang Village, Songzhuang Town, Tongzhou District, Beijing</span>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">生产基地：河北省三河市燕郊经济技术开发区燕昌204号路</span>
-                <span class="lang en hidden">Production Base: Yanchang Road 204, Yanjiao Economic and Technological Development Zone, Sanhe City, Hebei Province</span>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">总经理：13377619173</span>
-                <span class="lang en hidden">General Manager：13377619173</span>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">销售：18733329660</span>
-                <span class="lang en hidden">Sales：18733329660</span>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-phone text-gray-400 mt-1 mr-3"></i>
-              <span class="text-gray-400">
-                <span class="lang zh">销售：18510133991</span>
-                <span class="lang en hidden">Sales：18510133991</span>
-              </span>
-            </li>
-            <li class="flex items-center">
-              <i class="fa fa-envelope text-gray-400 mr-3"></i>
-              <span class="text-gray-400">80725764@qq.com</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-        <p>&copy; 2026 北京市京徽龙江科技有限公司. 保留所有权利.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script>
-    // 移动端菜单切换
-    (function () {
-      const menuToggle = document.getElementById('menu-toggle');
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', function() {
-          mobileMenu.classList.toggle('hidden');
-        });
-      }
-    })();
-    
-    // 资质证书左右划转与自动滑动功能（元素存在时才绑定）
-    (function () {
-      const container = document.getElementById('cert-container');
-      const slider = document.getElementById('cert-slider');
-      const leftBtn = document.getElementById('cert-scroll-left');
-      const rightBtn = document.getElementById('cert-scroll-right');
-      
-      if (!container || !slider) {
-        return;
-      }
-      
-      if (leftBtn) {
-        leftBtn.addEventListener('click', function() {
-          container.scrollBy({ left: -300, behavior: 'smooth' });
-        });
-      }
-      
-      if (rightBtn) {
-        rightBtn.addEventListener('click', function() {
-          container.scrollBy({ left: 300, behavior: 'smooth' });
-        });
-      }
-      
-      let scrollInterval;
-      function startAutoScroll() {
-        const containerWidth = container.clientWidth;
-        const totalWidth = slider.scrollWidth;
-        if (!containerWidth || !totalWidth) return;
-        
-        let currentScroll = 0;
-        clearInterval(scrollInterval);
-        scrollInterval = setInterval(function() {
-          currentScroll += 2;
-          if (currentScroll >= totalWidth - containerWidth) {
-            currentScroll = 0;
-          }
-          container.scrollLeft = currentScroll;
-        }, 30);
-      }
-      
-      container.addEventListener('mouseenter', function() {
-        clearInterval(scrollInterval);
-      });
-      
-      container.addEventListener('mouseleave', function() {
-        startAutoScroll();
-      });
-      
-      window.addEventListener('load', function() {
-        startAutoScroll();
-      });
-    })();
-    
-    // 动态调整页面内容上边距，确保不被导航栏覆盖
-    function adjustContentPadding() {
-      const nav = document.querySelector('nav');
-      const mainContent = document.querySelector('section');
-      if (nav && mainContent) {
-        const navHeight = nav.offsetHeight;
-        mainContent.style.paddingTop = `${navHeight + 20}px`;
-      }
-    }
-    
-    // 中英文切换功能
-    document.addEventListener('DOMContentLoaded', function() {
-      // 调整内容上边距
-      adjustContentPadding();
-      
-      // 窗口大小改变时重新调整
-      window.addEventListener('resize', adjustContentPadding);
-      
-      // 获取语言切换按钮
-      const langButtons = document.querySelectorAll('header button[data-lang]');
-      
-      // 添加点击事件监听器
-      langButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          const selectedLang = this.getAttribute('data-lang');
-          
-          // 移除所有按钮的活动状态
-          langButtons.forEach(btn => {
-            btn.classList.remove('bg-white', 'text-blue-600');
-            btn.classList.add('bg-transparent', 'border', 'border-white');
-          });
-          
-          // 添加当前按钮的活动状态
-          this.classList.remove('bg-transparent', 'border', 'border-white');
-          this.classList.add('bg-white', 'text-blue-600');
-          
-          // 切换显示语言内容
-          document.querySelectorAll('.lang').forEach(element => {
-            element.classList.add('hidden');
-          });
-          document.querySelectorAll(`.lang.${selectedLang}`).forEach(element => {
-            element.classList.remove('hidden');
-          });
-          
-          // 语言切换后重新调整内容上边距
-          adjustContentPadding();
-        });
-      });
-    });
-  </script>
-
-  <!-- 在线咨询小窗口 -->
-  <div id="online-consult" class="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
-    <div class="relative">
-      <button id="consult-toggle" class="bg-blue-600 text-white px-4 py-3 rounded-l-lg shadow-lg hover:bg-blue-700 transition-colors flex items-center">
-        <i class="fa fa-comments text-xl mr-2"></i>
-        <span class="lang zh">在线咨询</span>
-        <span class="lang en hidden">Online Consult</span>
-      </button>
-      <div id="consult-content" class="hidden absolute right-14 top-0 bg-white rounded-lg shadow-xl p-4 w-64">
-        <div class="text-center">
-          <h3 class="text-lg font-bold mb-3 text-gray-800">
-            <span class="lang zh">联系我们</span>
-            <span class="lang en hidden">Contact Us</span>
-          </h3>
-      <div class="mb-4">
-        <img src="/src/images/wechat-qr.png" alt="微信二维码" class="w-40 h-40 mx-auto object-contain border border-gray-200 rounded" loading="lazy" decoding="async">
-          <p class="text-sm text-gray-600 mb-2">
-            <span class="lang zh">扫描二维码</span>
-            <span class="lang en hidden">Scan QR Code</span>
-          </p>
-          <p class="text-sm text-gray-600 mb-3">
-            <span class="lang zh">添加微信详细了解</span>
-            <span class="lang en hidden">Add WeChat for details</span>
-          </p>
-          <div class="border-t pt-3 mt-3">
-            <p class="text-sm text-gray-600 mb-1">
-              <span class="lang zh">电话咨询</span>
-              <span class="lang en hidden">Phone Consult</span>
-            </p>
-            <p class="text-sm font-bold text-blue-600">13377619173</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById('consult-toggle').addEventListener('click', function() {
-      const content = document.getElementById('consult-content');
-      content.classList.toggle('hidden');
-    });
-  </script>
+    <!-- 外部JavaScript引入 -->
+    <!-- 功能：实现导航栏菜单切换和新闻动态分页功能 -->
+    <script src="script.js"></script>
 </body>
 </html>
